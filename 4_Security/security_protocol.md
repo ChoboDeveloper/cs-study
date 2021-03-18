@@ -28,6 +28,25 @@
 
 ---
 
+### SSL/TLS Protocol stack
+
+![image](https://user-images.githubusercontent.com/75229881/111439655-eee03c00-8748-11eb-8a7c-4e67b1ec22b2.png)
+
+* 상위 프로토콜 : Handshake 관련
+* 하위 레코드 프로토콜 : 단편화,압축,무결성,암호화 기능관련
+
+**Alert Protocol**
+
+>  Handshake 과정에서 오류 발생시 상대방에게 통보 기능 수행
+
+**Record Protocol**
+
+> 상위의 Handshake 프로토콜들의 메세지와 Application 메시지를 수납하여, 레코드 단위로 운반한다. 그리고 분할, 압축, 무결성, 인증등의 기능을 제공한다.
+
+---
+
+
+
 ### SSL/TLS Handshake
 
 1. **Client Hello**
@@ -66,4 +85,3 @@
 
 ---
 
-### 
