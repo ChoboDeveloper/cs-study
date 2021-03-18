@@ -93,5 +93,12 @@ ___
 
 ---
 
+### 공격
 
+* 차분공격
+  * chosen plaintext cryptanlysis의 일종으로  블록 암호에서 입력쌍의 차이(Input difference)와 해당 출력쌍에 대한 차이(Output difference) 값들의  확률 분포가 균일하지 않다는 사실을 이용하여 공격하는 방법이다. 입력에 따른 출력의 변화를 이용하여 암호를 공격하는 방법이다.
+
+
+
+---
 
