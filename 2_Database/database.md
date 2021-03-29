@@ -150,6 +150,43 @@
 
 ### 트랜잭션
 
+<br>
+
+### 트랜잭션 격리 수준
+
+**Read Uncommited** : Dirty Read, Non-repeatable Read, Phantom Read 발생
+
+**Read Committed** :  Dirty Read 방지 / Non-repeatable Read, Phantom Read 발생
+
+**Repeatable Read** : Dirty Read, Non-repeatable Read 방지 / Phantom Read 발생
+
+**Serializable** : Dirty Read, Non-repeatable Read, Phantom Read 방지
+
+> Dirty Read : T1이 트랜잭션 도중 T2가 값을 읽었으나 Rollback이 일어나면 발생
+>
+> Non-repeatable Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Update) T1이 다시 한번 데이터를 읽을 때 생기는 문제
+>
+> Phantom Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Insert) T1이 다시 한번 데이터를 읽을 때 생기는 문제
+
+<br>
+
+### 직렬성
+
+**충돌 직렬성**
+
+> 서로 다른 트랜잭션에서 동일한 자원에 대해 연속적으로 읽기/읽기를 제외한 쓰기가 하나라도 발생하면 충돌
+
+* 각 트랜잭션에서 R1(x), W2(x)와 같이 연속적으로 동일 데이터에 접근했을 때 R,R을 제외하고 선행 그래프로 표현할 수 있다. 여기서 Cycle이 형성된 경우 충돌이 발생한 것이며, 충돌이 발생하지 않은 경우 충돌 직렬성을 가진다고 말한다.
+
+**뷰 직렬성**
+
+* 모든 충돌 직렬 스케줄은 뷰 직렬
+
+* 충돌 직렬이 아니고 blind write인 경우(읽지 않고 쓰기) 뷰 직렬
+* 모든 트랙잭션이 같은 값을 Read하면 뷰 직렬
+
+<br>
+
 ### Locking 기법
 
 **2단계 Locking**
@@ -159,7 +196,7 @@
 - 확장 단계(Growing Phase): 트랜잭션은 새로운 lock 연산만 할 수 있고, unlock 연산은 할 수 없는 단계
 - 축소 단계(Shrinking Phase): 트랜잭션은 unlock 연산만 실행할 수 있고, lock 연산은 실행할 수 없는 단계
 
-
+<br>
 
 ### 회복기법
 
