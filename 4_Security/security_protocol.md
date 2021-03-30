@@ -85,3 +85,97 @@
 
 ---
 
+### Port number
+
+* (1) TCPMUX : TCP Port service multiplexer
+* (7) ECHO 
+* (20) FTP - DATA : FTP 데이터전송
+* (21) FTP - CONTROL : FTP 전송 제어
+* (23) TELNET : 암호화되지 않은 텍스트 통신
+* (25) SMTP 
+* (53) DNS
+* (69) TFTP 
+* (80) HTTP
+* (88) Kerberos
+* (110) POP3
+* (123) NTP : Network Time Protocol, 시간 동기화 프로토콜
+* (161) SNMP
+* (179) BGP
+* (443) HTTPS
+
+---
+
+### HTTP 상태코드
+
+**4XX: Client error**
+
+- 400 Bad Request
+  - 클라이언트가 올바르지 못한 요청을 보내고 있음을 의미
+- 401 Unauthorized
+  - 요청을 위해서는 권한 인증등을 요구함을 의미
+- 403 Forbidden
+  - 요청이 서버에 의해 거부 되었음을 의미, 서버는 거부 이유를 포함하여 응답할 수 있지만, 보통은 거부 이유를 숨기고 싶을 때 사용된다.
+- 404 Not Found
+  - 요청한 URL을 찾을 수 없음을 의미
+- 405 Method Not Allowed
+  - 요청한 URL이 Method를 지원하지 않음을 의미(ex] POST요청에 대한 응답을 하는 URL에 GET으로 요청)
+- 406 Not Acceptable
+  - 클라이언트 요청에 대해 적절한 컨텐츠가 없음을 의미
+- 407 Proxy Authentication Required
+  - 401과 동일하나, 프락시(우회경로)를 통하여 인증 할 것을 요구함을 의미
+- 408 Request Timeout
+  - 오래 사용하지 않아서 서버가 연결을 끊음
+- 409 Conflict
+  - 클라이언트 요청에 대해 서버에서 충돌 요소가 발생 할수 있음을 의미
+- 410 Gone
+  - 요청한 URL이 더 이상 사용되지 않고 사라졌음을 의미
+- 413 Payload Too Large
+  - Request의 Payload 너무 커서 서버가 처리 할 수 없음을 의미
+- 414 URL Too Long
+  - Request URL이 너무 길어 처리 할 수 없음을 의미
+- 415 Unsupported Media Type
+  - 서버가 이해 하지 못하는 유형의 컨텐츠를 요청 하였음을 의미
+- 416 Requested Range Not Satisfiable
+  - 클라이언트의 요청 내용이 범위가 잘못되었음을 의미
+- 429 Too Many Requests
+  - 사용자가 지정된 시간에 너무 많은 요청을 보냈습니다
+
+<br>
+
+**5XX: Server error**
+
+* 500 Internal Server Error
+
+  * 서버에 오류가 발생하여 응답 할 수 없음
+* 501 Not Implemented
+
+  * 클라이언트 요청에 대한 서버의 응답 수행 기능이 없음을 의미(ex] 서버가 지원하지 않는 새로운 Method를 사용하여 요청 - GET2, POST2...)
+* 502 Bad Gateway
+
+  * 서버가 게이트웨이로부터 잘못된 응답을 수신했음을 의미합니다. 인터넷상의 서버가 다른 서버로부터 유효하지 않은 응답을 받은 경우 발생
+* 503 Service Unavailable
+
+  * 유지보수를 위해 작동이 중단되거나 과부하가 걸린 서버
+* 504 Gateway Timeout
+
+  * 서버에서 다른 서버로 요청을 보냈으나, 응답 지연이 발생하여 처리가 불가함
+* 505 HTTP Version Not Supported
+
+  * 서버에서 지원되지 않는 HTTP 버전을 클라이언트가 요청
+* 506 Variant Also Negotiates
+
+  * 서버에 내부 구성 오류
+* 507 Insufficient Storage
+
+  * 서버 스토리지 부족
+* 508 Loop Detected (WebDAV)
+
+  * 서버가 요청을 처리하는 동안 무한 루프를 감지
+* 510 Not Extended
+
+  * 서버가 요청을 이행하려면 요청에 대한 추가 확장이 필요
+* 511 Network Authentication Required
+  * 클라이언트가 네트워크 액세스를 얻기 위해 인증할 필요가 있음
+
+---
+
