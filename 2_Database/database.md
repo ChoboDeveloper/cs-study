@@ -91,6 +91,12 @@
 * Dynamic SQL이란, String형 변수에 담아서 기술하는 SQL문을 말한다.
 * String 변수를 사용하므로 조건에 따라 SQL문을 동적으로 바꿀 수 있고, 또는 런타임 시에 사용자로부터 SQL문의 일부 또는 전부를 입력 받아서 실행할 수도 있다.
 
+### Assertion
+
+* relation의 어떠한 change라도 발생하면 그 즉시 발동된다.
+* CHECK는 선언되고 나타난 그 Relation안에서 참조를 하는 거라면, ASSERTION은 독립적으로 생성하여 어떤 Column이든 상관없이 수행한다.
+* Trigger은 삽입이나 갱신과 같은 이벤트에 명시하는 제약조건이라면, ASSERTION은 해당 릴레이션에 대한 지속적인 제약조건을 의미한다.
+
 ---
 
 ### 인덱스 선정 절차
@@ -146,74 +152,7 @@
 * NO FORCE에 의해 COMMIT한 트랜잭션의 내용이 디스크 상의 데이터베이스 상에 반영되어 있지 않을 수 있기 때문에 반드시 REDO 복구가 필요하게 된다.
 * UNDO를 수행하고 나면 해당 UNDO 작업에 대한 보상 로그 레코드(CLR, Compensation Log Record)라고 하는 REDO 전용 로그를 쓰게 되는데, UNDO를 하고 난 이후에 다시 UNDO를 해서 복구가 잘못 이루어지지 않도록 하기 위함이다.
 
----
 
-### 트랜잭션
-
-<br>
-
-### 트랜잭션 격리 수준
-
-**Read Uncommited** : Dirty Read, Non-repeatable Read, Phantom Read 발생
-
-**Read Committed** :  Dirty Read 방지 / Non-repeatable Read, Phantom Read 발생
-
-**Repeatable Read** : Dirty Read, Non-repeatable Read 방지 / Phantom Read 발생
-
-**Serializable** : Dirty Read, Non-repeatable Read, Phantom Read 방지
-
-> Dirty Read : T1이 트랜잭션 도중 T2가 값을 읽었으나 Rollback이 일어나면 발생
->
-> Non-repeatable Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Update) T1이 다시 한번 데이터를 읽을 때 생기는 문제
->
-> Phantom Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Insert) T1이 다시 한번 데이터를 읽을 때 생기는 문제
-
-<br>
-
-### 직렬성
-
-**충돌 직렬성**
-
-> 서로 다른 트랜잭션에서 동일한 자원에 대해 연속적으로 읽기/읽기를 제외한 쓰기가 하나라도 발생하면 충돌
-
-* 각 트랜잭션에서 R1(x), W2(x)와 같이 연속적으로 동일 데이터에 접근했을 때 R,R을 제외하고 선행 그래프로 표현할 수 있다. 여기서 Cycle이 형성된 경우 충돌이 발생한 것이며, 충돌이 발생하지 않은 경우 충돌 직렬성을 가진다고 말한다.
-
-**뷰 직렬성**
-
-* 모든 충돌 직렬 스케줄은 뷰 직렬
-
-* 충돌 직렬이 아니고 blind write인 경우(읽지 않고 쓰기) 뷰 직렬
-* 모든 트랙잭션이 같은 값을 Read하면 뷰 직렬
-
-<br>
-
-### Locking 기법
-
-**2단계 Locking**
-
-> unlock 이후에 lock이 나올 수 없음
-
-- 확장 단계(Growing Phase): 트랜잭션은 새로운 lock 연산만 할 수 있고, unlock 연산은 할 수 없는 단계
-- 축소 단계(Shrinking Phase): 트랜잭션은 unlock 연산만 실행할 수 있고, lock 연산은 실행할 수 없는 단계
-
-<br>
-
-### 회복기법
-
-**즉시/지연갱신**
-
-* 즉시 갱신
-  * 트랜잭션 수행 도중에도 변경 내용을 즉시 데이터베이스에 기록
-  * 커밋 발생 이전의 갱신은 원자성이 보장되지 않는 미완료 갱신이므로 장애 발생 시 UNDO 필요
-
-* 지연 갱신
-  * 트랜잭션의 부분 완료 상태에선 변경 내용을 로그 파일에만 저장
-  * 중간에 장애가 생기더라도 데이터베이스에 기록되지 않았으므로 UNDO가 필요 없음
-
-**체크포인트**
-
-* 검사점 이후 커밋은 Redo
-* 즉시 갱신 시 검사점 이후 커밋이 없는 트랜잭션은 Undo
 
 ---
 
