@@ -21,6 +21,8 @@ Computer Science Knowledge Repository
 
 ## 데이터베이스 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/database.md)
 
+[트랜잭션](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_transaction.md)
+
 <br><br>
 
 ## OS/컴퓨터구조 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os.md)

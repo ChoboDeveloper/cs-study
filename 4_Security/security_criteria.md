@@ -37,7 +37,7 @@
 
 ----
 
-### **ITSEC(**Information Technology Security Evaluation Criteria)
+### ITSEC(Information Technology Security Evaluation Criteria)
 
 > 유럽에서 제정한 보안 표준
 
