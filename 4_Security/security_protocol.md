@@ -28,12 +28,28 @@
 
 ---
 
+### ICMP
+
+* Internet Control Message Protocol, 네트워크 계층 프로토콜
+* ICMP 메세지들은 일반적으로 IP 동작에서 진단이나 제어로 사용되거나 오류에 대한 응답으로 만들어진다
+* ICMP 오류들은 원래 패킷의 소스 IP 주소로 보내지게 된다
+* ICMP 활용 명령어
+  * Ping : 상대방 호스트의 작동 여부 및 응답시간 측정하는데 사용
+  * Tracert : 목적지까지의 라우팅 경로 추적을 하기 위해 사용
+    * 참고) Traceroute는 리눅스 명령어이며 비슷한 기능을 하지만 UDP를 사용한다.
+
+---
+
 ### SSL/TLS Protocol stack
 
 ![image](https://user-images.githubusercontent.com/75229881/111439655-eee03c00-8748-11eb-8a7c-4e67b1ec22b2.png)
 
 * 상위 프로토콜 : Handshake 관련
 * 하위 레코드 프로토콜 : 단편화,압축,무결성,암호화 기능관련
+
+**Change Cipher Spec Protocol**
+
+> handshake 과정을 통해 협상된 암호 사양을 새로운 값으로 변경
 
 **Alert Protocol**
 
@@ -43,9 +59,13 @@
 
 > 상위의 Handshake 프로토콜들의 메세지와 Application 메시지를 수납하여, 레코드 단위로 운반한다. 그리고 분할, 압축, 무결성, 인증등의 기능을 제공한다.
 
+* 데이터를 동일한 크기의 블록으로 단편화(Fragmentation)
+* 각 블록을 압축(Compression)
+* 각 블록마다 MAC(Message Authentication Code) 생성
+* 각 블록+MAC을 암호화(Encryption)
+* SSL Record Protocol 헤더 추가
+
 ---
-
-
 
 ### SSL/TLS Handshake
 
