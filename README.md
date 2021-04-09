@@ -48,7 +48,7 @@ Computer Science Knowledge Repository
 
 <br><br>
 
-## 네트워크
+## 네트워크 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/7_Network/network.md)
 
 <br><br>
 
