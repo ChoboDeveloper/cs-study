@@ -108,20 +108,45 @@ cout << s; // This an xampl
 
 // 2. find 사용
 int idx;
-    while(1){
-        idx = s.find('e');
-        cout << idx << endl;	// 11, 16, -1 출력
-        if(idx != -1)
-            s.erase(s.begin()+idx);
-        else
-            break;
-    }
+while(1){
+    idx = s.find('e');
+    cout << idx << endl;	// 11, 16, -1 출력
+    if(idx != -1)
+        s.erase(s.begin()+idx);
+    else
+        break;
+}
 cout << s << endl; // This is an xampl
 ```
 
-**string::replace**
-
 **string::substring**
+
+```c++
+//define
+basic_string substr( size_type pos = 0, size_type count = npos ) const;
+
+//example
+string a = "0123456789abcdefghij";
+string sub1 = a.substr(10);
+cout << sub1 << '\n';	// abcdefghij
+
+string sub2 = a.substr(5, 3);
+cout << sub2 << '\n';	// 567
+
+// 특정 구분자를 제외시킨 문장
+string s = "This<div>is<div>a<div>string";
+int idx = 0;
+int begin = 0;
+string seperator = "<div>";
+while(idx != -1){
+    idx = s.find(seperator, begin);
+    string tmp = s.substr(begin, idx - begin);
+    begin = idx+seperator.size();
+    cout << tmp;
+}	// Thisisastring
+```
+
+
 
 ---
 
