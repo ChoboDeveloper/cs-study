@@ -150,3 +150,33 @@ while(idx != -1){
 
 ---
 
+## Stringstream
+
+* 공백, \n을 제외한 연속적인 입력
+
+```c++
+#include <sstream>
+
+//example
+string str1 = "23 259 .326 22 a 15"; 
+
+stringstream ss(str1);
+string k; 
+while(ss >> k) cout << k << endl;
+// kk 259 abc 22 def qwer
+
+ss.clear();
+ss.str(str1);
+string s[4];
+ss >> s[0] >> k >> s[1] >> k >> s[2] >> s[3];
+for(auto i : s) cout << i << " "; 
+cout << k;
+//kk abc def qwer 22
+
+
+```
+
+
+
+---
+
