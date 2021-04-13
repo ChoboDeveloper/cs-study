@@ -199,3 +199,13 @@
 
 ---
 
+### FTP
+
+* 포트 20, 21
+* File Transfer Protocol
+* FTPS = FTP + SSL
+* sFTP = FTP + SSH (22번 포트)
+* SSL은 TCP/IP의 암호화, SSH는 Telnet(원격접속), 데이터전송 암호화
+
+---
+

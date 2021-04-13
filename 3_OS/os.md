@@ -139,5 +139,47 @@
 
 ---
 
+### 캐시
 
+* 블록
+  * 주기억장치에서 word를 나누는 단위
+  * 주기억장치 용량이 2<sup>n</sup> word이고 블록 사이즈가 K word라면 블록의 수는 2<sup>n</sup>/K
+* 라인
+  * 캐시의 크기만큼의 라인을 가짐
+  * 주기억 장치가 64 word 이고 캐시가 16 word라면 4 line을 가진다.
+* 태그
+  * 블록 내부의 offset
+
+<br>
+
+**매핑방식**
+
+![image](https://user-images.githubusercontent.com/75229881/114500782-bb1f0600-9c63-11eb-9a73-416a15fb779a.png)
+
+* 직접사상
+
+  * 태그 필드에서 해당 블록의 위치를 지정
+  * 라인 필드에서 라인을 지정(블록크기와 동일)
+  * 단어 필드(데이터)
+
+![image](https://user-images.githubusercontent.com/75229881/114502916-79905a00-9c67-11eb-89c9-96e026cac12c.png)
+
+* 연관사상
+
+  * 블록으로 안나누고 태그가 하나의 Word의 주소를 가진다
+
+![image](https://user-images.githubusercontent.com/75229881/114503120-c2e0a980-9c67-11eb-8a12-da0b01bf4837.png)
+
+* 세트-연관 사상
+
+  * 세트는 블록의 묶음(2-way면 2라인을 가진다)
+  * (t+d) 비트가 주기억장치의 2<sup>(t+d)</sup>를 가리킨다
+
+---
+
+
+
+
+
+  
 
