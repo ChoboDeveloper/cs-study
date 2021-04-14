@@ -111,6 +111,7 @@
 * (7) ECHO 
 * (20) FTP - DATA : FTP 데이터전송
 * (21) FTP - CONTROL : FTP 전송 제어
+* (22) sFTP - SSH + FTP
 * (23) TELNET : 암호화되지 않은 텍스트 통신
 * (25) SMTP 
 * (53) DNS
@@ -119,6 +120,7 @@
 * (88) Kerberos
 * (110) POP3
 * (123) NTP : Network Time Protocol, 시간 동기화 프로토콜
+* (143) IMAP
 * (161) SNMP
 * (179) BGP
 * (443) HTTPS

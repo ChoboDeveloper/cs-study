@@ -195,11 +195,38 @@ webshell은 간단한 서버 스크립트 (jsp,php,asp ..)로 만드는 방법�
 
 ---
 
+### TCP 세션 하이재킹
+
+![image](https://user-images.githubusercontent.com/75229881/114658525-eae61080-9d2c-11eb-8236-1729eb91cf0e.png)
+
+1. 스니핑을 통해 세션을 확인하고 적절한 시퀀스 번호를 획득한다.
+2. 사용자와 서버간의 TCP 연결을 RST 패킷을 보내 서버 쪽 연결만을 끊는다. (Server-Closed, Client-Established)
+3. 공격자는 새로운 시퀀스 번호를 생성하여 서버로 보낸다. (비동기화 상태 만듦)
+4. 서버는 새로운 시퀀스 번호를 받아들이며, 다시 세션을 연다.
+5. 공격자는 정상적인 연결처럼 서버와 시퀀스 번호를 교환하고 공격자, 서버 모두 Established상태가 된다.
+
+---
+
 ### DOS
 
 * Land 공격
   * 공격 대상에게 출발지와 목적지가 동일한 패킷 전송
   * 공격 대상은 자신에게 TCP-SYN 패킷을 보내게 되고 빈 연결이 지속적으로 생성되어 DOS 상태가 됌
 
+* Teardrop
+  * 패킷의 Fragment Offset 조작
+  * 패킷을 겹치거나 빈공간을 만드는 등 offset을 조작하여 이를 재조합하는 공격 대상 시스템에 에러와 부하 유발
+  * Bonk는 순서번호가 1번인 Fragment를 계속 보냄
+  * Boink는 처음에는 정상적인 순서의 Fragment를 보내다가 점점 순서번호가 어긋난 패킷을 보내는 방법
+
 ---
+
+### DDOS
+
+**Flooding**
+
+* HTTP GET Flooding
+  * 대량의 HTTP GET 요청
+  * with CC(cache-control)
+    * HTTP 헤더의 Cache-Control: no-store, must-revalidate로 지정하여 웹 서버가 캐시를 사용하지 못하도록 하여 일반적인 DDOS보다 적은 양으로도 DOS 상태에 빠지게 만든다.
 
