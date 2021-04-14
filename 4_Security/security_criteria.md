@@ -20,6 +20,15 @@
 | EAL 6 | 준정형화 설계 검증 | 전체 소스 코드               |
 | EAL 7 | 정형화 설계 검증   | 개발 문서 정형화 기술        |
 
+* Protection Profile(PP)
+  * 제품군에 대한 보안 요구사항
+
+* Security Target(ST)
+  * ST 는 PP 를 포함한다
+  * 특정 제품에 대한 보안 명세
+* Target of Evaluation(TOE)
+  * 평가의 대상인 IT 제품이나 시스템과 이와 관련된 관리자 설명서 및 사용자 설명서
+
 ---
 
 ### TCSEC(**Trusted Computer Security Evaluation Criteria**)
