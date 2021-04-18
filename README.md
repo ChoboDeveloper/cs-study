@@ -27,14 +27,14 @@ Computer Science Knowledge Repository
 
 ## OS/컴퓨터구조 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os.md)
 
+[리눅스/윈도우](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_linux_window.md)
+
 <br><br>
 
 ## 정보보안 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security.md)
 [공격](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_attack.md)   
 
 [암호학](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_crypto.md)  
-
-[명령어](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_command.md)  
 
 [프로토콜](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_protocol.md)  
 
