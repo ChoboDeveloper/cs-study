@@ -40,6 +40,8 @@ Computer Science Knowledge Repository
 
 [표준](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_criteria.md)  
 
+[무선랜 보안](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_wireless.md)  
+
 <br><br>
 
 ## 프로그래밍

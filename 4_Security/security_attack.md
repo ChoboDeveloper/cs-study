@@ -212,12 +212,21 @@ webshell은 간단한 서버 스크립트 (jsp,php,asp ..)로 만드는 방법�
 * Land 공격
   * 공격 대상에게 출발지와 목적지가 동일한 패킷 전송
   * 공격 대상은 자신에게 TCP-SYN 패킷을 보내게 되고 빈 연결이 지속적으로 생성되어 DOS 상태가 됌
-
 * Teardrop
   * 패킷의 Fragment Offset 조작
   * 패킷을 겹치거나 빈공간을 만드는 등 offset을 조작하여 이를 재조합하는 공격 대상 시스템에 에러와 부하 유발
   * Bonk는 순서번호가 1번인 Fragment를 계속 보냄
   * Boink는 처음에는 정상적인 순서의 Fragment를 보내다가 점점 순서번호가 어긋난 패킷을 보내는 방법
+* Slow HTTP Header(Slowloris)
+
+  * HTTP Header 정보를 비정상적으로 조작하여 웹서버가 온전한 Header정보가 올때 까지 대기하도록 함
+* Slow HTTP POST
+
+  * POST 메소드로 대량의 데이터를 장시간에 걸쳐 분할 전송하여 연결을 장시간 유지
+  * 예를들어,  Content-Length를 100000byte로 하고 데이터는 일정한 간격으로 1byte씩 전송
+* Slow HTTP Read
+  * 매우 작은 윈도우크기로 서버에 응답을 보내면 서버는 더 이상 데이터를 전송하지 못하고 연결만 유지한 상태로 대기
+    * TCP의 Window size 버퍼에 한 번에 담을 수 있는 양
 
 ---
 
@@ -229,4 +238,15 @@ webshell은 간단한 서버 스크립트 (jsp,php,asp ..)로 만드는 방법�
   * 대량의 HTTP GET 요청
   * with CC(cache-control)
     * HTTP 헤더의 Cache-Control: no-store, must-revalidate로 지정하여 웹 서버가 캐시를 사용하지 못하도록 하여 일반적인 DDOS보다 적은 양으로도 DOS 상태에 빠지게 만든다.
+
+---
+
+### DRDoS
+
+> (Distributed Reflection Denial of Service)
+
+* 공격 트래픽이 수많은 반사 서버를 경유하기 때문에 공격의 근원지 파악해 역추적 거의 불가능
+* IP Spoofing을 이용한 공격이다
+
+---
 

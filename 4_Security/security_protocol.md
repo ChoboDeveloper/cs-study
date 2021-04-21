@@ -211,3 +211,18 @@
 
 ---
 
+### HTTP
+
+* URL의 구성
+
+| 형식      | 구성요소  | URL주소                |
+| --------- | --------- | ---------------------- |
+| schema:// | protocol  | http://                |
+| authority | host      | codedragon.tistory.com |
+| port      | port      | :80                    |
+| path?     | path      | /member/mem.jsp        |
+| query#    | query     | ?name=hong#            |
+| fragment  | reference | content                |
+
+---
+
