@@ -3,12 +3,6 @@ Computer Science Knowledge Repository
 
 <br>
 
-#### how to use
-
-[마크다운 작성법](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiiyM7DkdLuAhXwyosBHTA6DU8QFjAAegQIAhAC&url=https%3A%2F%2Fgist.github.com%2Fihoneymon%2F652be052a0727ad59601&usg=AOvVaw1f7n5FGHUyM6FYPLdt4OtB)
-
-<br>
-
 ## 소프트웨어공학 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng.md)
 
 [연습문제](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_problems.md)  
@@ -21,13 +15,19 @@ Computer Science Knowledge Repository
 
 ## 데이터베이스 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/database.md)
 
-[트랜잭션](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_transaction.md)
+[트랜잭션](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_transaction.md)  
+
+[SQL](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_sql.md)
 
 <br><br>
 
-## OS/컴퓨터구조 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os.md)
+## OS/컴퓨터구조 
 
-[리눅스/윈도우](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_linux_window.md)
+[운영체제](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os.md)
+
+[컴퓨터구조](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/computer_architecture.md)  
+
+[리눅스/윈도우](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_linux_window.md)  
 
 <br><br>
 
@@ -50,7 +50,7 @@ Computer Science Knowledge Repository
 
 <br><br>
 
-## 네트워크 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/7_Network/network.md)
+## 네트워크/통신 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/7_Network/network.md)
 
 <br><br>
 
