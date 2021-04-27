@@ -14,8 +14,10 @@
 
 ---
 
-### IPC(Inter Process Communication)
+### IPC
 
+> Inter-Process Communication
+>
 > UNIX 시스템은 다양한 종류의 프로세스 간 통신을 지원
 >
 > 각 프로세스는 시스템호출을 통해 커널의 기능을 사용하며, 프로세스간 통신은 Signal, Pipe, Socket 등을 사용한다
