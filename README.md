@@ -19,6 +19,8 @@ Computer Science Knowledge Repository
 
 [SQL](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_sql.md)
 
+[Hadoop](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_hadoop.md)
+
 <br><br>
 
 ## OS/컴퓨터구조 
@@ -26,6 +28,8 @@ Computer Science Knowledge Repository
 [운영체제](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os.md)
 
 [컴퓨터구조](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/computer_architecture.md)  
+
+[자료구조](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_datastructure.md)  
 
 [리눅스/윈도우](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_linux_window.md)  
 
