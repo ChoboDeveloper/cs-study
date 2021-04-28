@@ -28,18 +28,6 @@
 
 ---
 
-### ICMP
-
-* Internet Control Message Protocol, 네트워크 계층 프로토콜
-* ICMP 메세지들은 일반적으로 IP 동작에서 진단이나 제어로 사용되거나 오류에 대한 응답으로 만들어진다
-* ICMP 오류들은 원래 패킷의 소스 IP 주소로 보내지게 된다
-* ICMP 활용 명령어
-  * Ping : 상대방 호스트의 작동 여부 및 응답시간 측정하는데 사용
-  * Tracert : 목적지까지의 라우팅 경로 추적을 하기 위해 사용
-    * 참고) Traceroute는 리눅스 명령어이며 비슷한 기능을 하지만 UDP를 사용한다.
-
----
-
 ### SSL/TLS Protocol stack
 
 ![image](https://user-images.githubusercontent.com/75229881/111439655-eee03c00-8748-11eb-8a7c-4e67b1ec22b2.png)
@@ -198,31 +186,6 @@
   * 서버가 요청을 이행하려면 요청에 대한 추가 확장이 필요
 * 511 Network Authentication Required
   * 클라이언트가 네트워크 액세스를 얻기 위해 인증할 필요가 있음
-
----
-
-### FTP
-
-* 포트 20, 21
-* File Transfer Protocol
-* FTPS = FTP + SSL
-* sFTP = FTP + SSH (22번 포트)
-* SSL은 TCP/IP의 암호화, SSH는 Telnet(원격접속), 데이터전송 암호화
-
----
-
-### HTTP
-
-* URL의 구성
-
-| 형식      | 구성요소  | URL주소                |
-| --------- | --------- | ---------------------- |
-| schema:// | protocol  | http://                |
-| authority | host      | codedragon.tistory.com |
-| port      | port      | :80                    |
-| path?     | path      | /member/mem.jsp        |
-| query#    | query     | ?name=hong#            |
-| fragment  | reference | content                |
 
 ---
 

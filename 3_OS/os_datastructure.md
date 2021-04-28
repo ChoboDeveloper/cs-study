@@ -48,5 +48,16 @@ ex) "ABBCCCDDDDEEEEEFFFFFF"
 
 ---
 
+### Trie
 
+> Digtal Tree, Radix Tree, Prefix Tree라고도 불림
+>
+>  문자열을 저장하고 탐색하는데 유용한 자료구조
+
+<img src = "https://user-images.githubusercontent.com/75229881/116357197-2e657200-a837-11eb-8a56-ec5c12f8525d.png" width="500px">
+
+* 문자열 길이가 N일 때, O(N)을 보장
+* 공간복잡도가 단점
+
+---
 
