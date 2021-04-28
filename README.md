@@ -40,11 +40,13 @@ Computer Science Knowledge Repository
 
 [암호학](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_crypto.md)  
 
-[프로토콜](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_protocol.md)  
+[보안프로토콜](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_protocol.md)  
 
 [표준](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_criteria.md)  
 
 [무선랜 보안](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_wireless.md)  
+
+[네트워크 보안](https://github.com/ChoboDeveloper/cs-study/blob/main/4_Security/security_network.md)  
 
 <br><br>
 
@@ -55,6 +57,10 @@ Computer Science Knowledge Repository
 <br><br>
 
 ## 네트워크/통신 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/7_Network/network.md)
+
+[네트워크 프로토콜](https://github.com/ChoboDeveloper/cs-study/blob/main/7_Network/network_protocol.md)
+
+[전자메일](https://github.com/ChoboDeveloper/cs-study/blob/main/7_Network/network_mail.md)
 
 <br><br>
 
