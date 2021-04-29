@@ -54,6 +54,8 @@ Computer Science Knowledge Repository
 
 [C++STL](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/c%2B%2Bstl.md)
 
+[Python](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/python.md)
+
 <br><br>
 
 ## 네트워크/통신 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/7_Network/network.md)
