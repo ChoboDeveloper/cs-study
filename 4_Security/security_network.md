@@ -47,11 +47,15 @@
 
 **단일 홈 게이트웨이**
 
+![image](https://user-images.githubusercontent.com/75229881/119295258-58bd1a80-bc91-11eb-83e8-9c89fd11347b.png)
+
 * 베스천 호스트 사용
 
 * 접근제어, 프록시, 인증, 로깅 등 방화벽의 기본 기능을 수행
 
 **이중 홈 게이트웨이**
+
+![image](https://user-images.githubusercontent.com/75229881/119295272-68d4fa00-bc91-11eb-8dc9-05de5be1e84d.png)
 
 * 베스천 호스트 사용
 
@@ -60,6 +64,8 @@
 
 **스크린드 호스트 게이트웨이**
 
+<img src = "https://user-images.githubusercontent.com/75229881/119295411-c1a49280-bc91-11eb-8da4-c941893e01ca.png" width="50%">
+
 * 라우터 + 베스천 호스트 사용
 
 * 스크리닝 라우터와 단일 혹은 듀얼 홈 게이트웨이와 조합해서 사용하는 방식
@@ -67,11 +73,17 @@
 
 **스크린드 서브넷 게이트웨이**
 
+<img src = "https://user-images.githubusercontent.com/75229881/119295371-9fab1000-bc91-11eb-90c4-0c3bcf8b9a57.png" width="50%">
+
 * 라우터 + 베스천 호스트 + 라우터 사용
 
 * 스크린드 서브넷 게이트웨이 방식은 외부와 내부의 가운데에 DMZ(DeMilitarized Zone)를 위치시켜 프록시를 설치하여 완충지대를 구성
 
 ---
 
+### 방화벽/IDS/IPS
 
+![image](https://user-images.githubusercontent.com/75229881/119295114-f9f7a100-bc90-11eb-95d1-5a5cc1eb58c2.png)
+
+---
 

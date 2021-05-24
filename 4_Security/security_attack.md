@@ -161,6 +161,7 @@ webshell은 간단한 서버 스크립트 (jsp,php,asp ..)로 만드는 방법�
   * 속도가 느리고 로그를 남기므로 탐지가 가능하다는 단점이 있음
 * **TCP Half Open 스캔(TCP SYN 스캔)**
   * 세션에 대한 로그가 남는 TCP Full Open 스캔의 단점을 보완하기 위해 나온 기법으로 로그를 남기지 않아 추적이 불가능 하도록 하는 기법이다.
+  * 서버로 ACK를 받으면 바로 RST를 보내는 기법이다.
   * 세션을 완전히 연결하지 않고, TCP Half Connection만으로 포트의 활성화 여부를 판단한다.
   * 공격자의 SYN 세그먼트 전송기록은 남게 되므로 스캐닝 공격사실을 완전히 숨길 수는 없다.
 * **UDP 스캔**
@@ -235,17 +236,16 @@ webshell은 간단한 서버 스크립트 (jsp,php,asp ..)로 만드는 방법�
 * Slow HTTP Read
   * 매우 작은 윈도우크기로 서버에 응답을 보내면 서버는 더 이상 데이터를 전송하지 못하고 연결만 유지한 상태로 대기
     * TCP의 Window size 버퍼에 한 번에 담을 수 있는 양
+* HTTP GET Flooding
+  * 대량의 HTTP GET 요청
+  * with CC(cache-control)
+    * HTTP 헤더의 Cache-Control: no-store, must-revalidate로 지정하여 웹 서버가 캐시를 사용하지 못하도록 하여 일반적인 DDOS보다 적은 양으로도 DOS 상태에 빠지게 만든다.
 
 ---
 
 ### DDOS
 
-**Flooding**
 
-* HTTP GET Flooding
-  * 대량의 HTTP GET 요청
-  * with CC(cache-control)
-    * HTTP 헤더의 Cache-Control: no-store, must-revalidate로 지정하여 웹 서버가 캐시를 사용하지 못하도록 하여 일반적인 DDOS보다 적은 양으로도 DOS 상태에 빠지게 만든다.
 
 ---
 

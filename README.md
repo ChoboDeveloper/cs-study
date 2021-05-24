@@ -5,10 +5,6 @@ Computer Science Knowledge Repository
 
 ## 소프트웨어공학 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng.md)
 
-[연습문제](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_problems.md)  
-
-[디자인패턴](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_design_pattern.md)  
-
 [평가모델](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_assessment_model.md)  
 
 <br><br>
