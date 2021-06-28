@@ -22,7 +22,7 @@
 
 - SQL Injection ; 악의적인 SQL 문을 실행되게 하여, 데이터베이스를 비정상적으로 조작하는 Code Injection 공격 방법.
 
-![SQL-1](/6_IT-speech/assets/SQL-1.png)
+![SQL-1](/6_IT-issue/assets/SQL-1.png)
 
 - 방어 방법
   - 방화벽 사용.

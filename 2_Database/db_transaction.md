@@ -12,11 +12,11 @@
 
 **Serializable** : Dirty Read, Non-repeatable Read, Phantom Read 방지
 
-> Dirty Read : T1이 트랜잭션 도중 T2가 값을 읽었으나 Rollback이 일어나면 발생
+> Dirty Read : T1이 트랜잭션 도중 T2가 값을 읽었으나 Rollback이 일어나면 발생 (Read date Disappeared)
 >
-> Non-repeatable Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Update) T1이 다시 한번 데이터를 읽을 때 생기는 문제
+> Non-repeatable Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Update) T1이 다시 한번 데이터를 읽을 때 생기는 문제 (Read Data Changed)
 >
-> Phantom Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Insert) T1이 다시 한번 데이터를 읽을 때 생기는 문제
+> Phantom Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Insert) T1이 다시 한번 데이터를 읽을 때 생기는 문제, (Non-Read Data Inserted)
 
 ---
 
@@ -79,8 +79,6 @@
 * Ti에 의하여 쓰여진 하나의 자료 항목을 Tj가 읽는 한 쌍의 트랜잭션 Ti와 Tj 에서 Tj의 읽기 연산에 앞서 Ti의 완료 연산이 실행되는 스케줄
 
 * 위의 경우와 달리 T1을 Commit한 경우, T1만 철회함으로 이를 해결 가능
-
-
 
 **뷰 동치 스케줄**
 
