@@ -279,9 +279,9 @@ SGT : TGS에서 발급, 주어진 시간 동안 사용가능
 
 > **무결성**을 위한 최초의 상업적 모델
 
-* 상위레벨 쓰기 금지
+* 상위레벨 쓰기 금지(No Write Up)
 
-* 하위레벨 읽기 금지
+* 하위레벨 읽기 금지(No Read Down)
 
 * 호출 속성: 높은 무결성을 가진 주체에게 서비스를 요청할 수없다. (낮은 무결성을 가진 객체에게 요청 가능)
 
@@ -353,11 +353,14 @@ ___
 | 2. 취약한 인증 및 세션관리(Broken Authentication and Session Management) | 2. 취약한 인증(Broken Authentication)                       |
 | 3. XSS                                                       | 3. 민감 데이터 노출(Sensitive Data Exposure)                |
 | 4. 취약한 개체 직접 참조(Insecure Direct Object References)  | 4. XML External Entities (XXE)                              |
-| 5. 보안 설정 오류(Security Misconfiguration)                 | 5. 취약한 접근 통제(Broken Access control) / (13년도의 4+7) |
+| 5. 보안 설정 오류(Security Misconfiguration)                 | 5. 취약한 접근 통제(Broken Access Control) / (13년도의 4+7) |
 | 6. 민감 데이터 노출(Sensitive Data Exposure)                 | 6. 잘못된 보안 구성                                         |
 | 7. 접근 통제 누락(Missing Function Level Access Control)     | 7. XSS                                                      |
 | 8. CSRF                                                      | 8. 안전하지 않은 역직렬화                                   |
 | 10. 검증되지 않은 리다이렉트, 포워드                         | 9. 알려진 취약점이 있는 구성요소 사용(13년도랑 같음)        |
+
+* Broken Authenticaton : 세션관리가 취약하여 세션탈취의 위험성이 존재
+* Broken Access Control : 적절한 접근관리가 이루어지지 않아 중요정보, 관리자 페이지등이 위험에 노출될 수 있음
 
 ---
 
@@ -382,9 +385,23 @@ ___
 
 ---
 
-### DLP(Data loss prevention)
+### DLP
+
+> Data loss prevention
 
 * 기업 등 내부에서 외부로의 개인정보 및 민감정보의 유출을 차단
+
+---
+
+### ESM
+
+> 전사적 보안관리
+
+* 방화벽, IDS, IPS, VPN등 다양한 보안 솔루션을 구축하고 이를 통해 보안관리
+
+### SIEM
+
+* ESM에 빅데이터를 결합하여 보안 솔루션에서 수집한 로그 데이터를 바탕으로 위협 탐지가 가능한 지능형 로그 관리 플랫폼
 
 ---
 

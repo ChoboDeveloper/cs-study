@@ -179,8 +179,7 @@
 
   * 서버 스토리지 부족
 * 508 Loop Detected (WebDAV)
-
-  * 서버가 요청을 처리하는 동안 무한 루프를 감지
+* 서버가 요청을 처리하는 동안 무한 루프를 감지
 * 510 Not Extended
 
   * 서버가 요청을 이행하려면 요청에 대한 추가 확장이 필요
@@ -188,4 +187,13 @@
   * 클라이언트가 네트워크 액세스를 얻기 위해 인증할 필요가 있음
 
 ---
+
+### SNMP
+
+* Manager은 관리 시스템(162/udp), Agent는 관리 대상(161/udp)
+* Manager은 Polling, Agent는 Event Reporting
+
+---
+
+
 
