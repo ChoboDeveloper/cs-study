@@ -5,18 +5,21 @@
 ### WEP
 
 * RC4 사용(스트림암호)
+* 무결성 : CRC-32
 
 ---
 
 ### WPA
 
-* TKIP 사용
+* RC4+TKIP 사용
+* 무결성 : TKIP
 
 ---
 
 ### WPA2
 
 * CCMP-AES 암호화, CTR모드
+* 무결성 : CCMP
 
 ---
 
