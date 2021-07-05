@@ -7,6 +7,10 @@ Computer Science Knowledge Repository
 
 [평가모델](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_assessment_model.md)  
 
+[아키텍처](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_architecture.md)  
+
+[국제표준](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_iso.md)  
+
 <br><br>
 
 ## 데이터베이스 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/database.md)
@@ -27,7 +31,9 @@ Computer Science Knowledge Repository
 
 [자료구조](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_datastructure.md)  
 
-[리눅스/윈도우](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_linux_window.md)  
+[리눅스](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_linux.md)  
+
+[윈도우](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_window.md) 
 
 <br><br>
 

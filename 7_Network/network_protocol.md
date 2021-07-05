@@ -80,5 +80,12 @@
 
 ---
 
+### TCP
+
+* 제어플래그
+  * URG / ACK / PSH / RST / SYN / FIN 순서
+
+---
+
 
 
