@@ -12,6 +12,14 @@
 
   ![image](https://user-images.githubusercontent.com/75229881/110737022-fa76c300-826f-11eb-960a-27499f930912.png)
 
+  > N-step-SCAN
+  >
+  > 디스크 헤더가 n개의 요청만 받아들이고 이들만 수행한다
+  >
+  > 만약 n이 엄청 큰 숫자이면 SCAN과 다를게 없고, n이 1이면 FCFS와 다를게 없다
+  >
+  > *response-time-interval*을 줄일 수 있다
+
 * C-SCAN
 
   * 한 쪽 방향으로만 이동한다
