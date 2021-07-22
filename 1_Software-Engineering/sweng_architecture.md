@@ -25,3 +25,9 @@
 
 ---
 
+### EAI 구축유형
+
+![image](https://user-images.githubusercontent.com/75229881/126605344-79da9988-1f93-4fee-adf5-1e8907eb1890.png)
+
+---
+
