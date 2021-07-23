@@ -9,7 +9,11 @@ Computer Science Knowledge Repository
 
 [아키텍처](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_architecture.md)  
 
+[테스트](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_test.md)  
+
 [국제표준](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_iso.md)  
+
+
 
 <br><br>
 
@@ -53,6 +57,8 @@ Computer Science Knowledge Repository
 <br><br>
 
 ## 프로그래밍
+
+[Algorithm](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/algorithm.md)
 
 [C++STL](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/c%2B%2Bstl.md)
 

@@ -64,6 +64,8 @@ ex) "ABBCCCDDDDEEEEEFFFFFF"
 
 ### 보간탐색
 
+* 정렬된 리스트
+
 * x를 탐색할 때, pos
   * pos = low + (x - arr[low]) * (high - low) / (arr[high] - arr[low])
 

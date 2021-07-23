@@ -99,7 +99,7 @@
 * (7) ECHO 
 * (20) FTP - DATA : FTP 데이터전송
 * (21) FTP - CONTROL : FTP 전송 제어
-* (22) sFTP - SSH + FTP
+* (22) SSH
 * (23) TELNET : 암호화되지 않은 텍스트 통신
 * (25) SMTP 
 * (53) DNS

@@ -115,7 +115,7 @@
   ![image](https://user-images.githubusercontent.com/75229881/116369782-b8680780-a844-11eb-9f83-e1622d0230e1.png)
 
   * 분산기억장치 시스템
-  * 2<sup>n</sup>의 연결선 필요
+  * 연결점이 n이면 2<sup>n</sup>개의 CPU 존재
   * 경제적이고 확장성이 좋음
 
 * 시분할 및 공유버스
