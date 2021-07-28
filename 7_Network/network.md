@@ -101,5 +101,22 @@ SNR 공식) SNR[db] = 10log(S/N)
 
 ---
 
+### CDMA 복합신호
 
+* 비트가 '0' 이면 -1, 1이면 +1의 신호를 가진다
+
+<img src = "https://user-images.githubusercontent.com/75229881/127096369-ccddb361-7729-40ed-8e16-cdb6645e9c6b.png" width="80%">
+
+* 각 노드의 칩 순열에 따라 곱 연산을 실행하고 이를 합산하여 공통 채널의 디지털 신호를 구할 수 있다
+
+
+<img src = "https://user-images.githubusercontent.com/75229881/127096435-b17fb9b6-2e58-4984-a90b-1384a35b97ab.png" width="80%">
+
+<img src ="https://user-images.githubusercontent.com/75229881/127096552-153fb711-d1d1-49ee-8789-325ebdecf1de.png " width="80%">
+
+* 복호화 과정에서 공통 채널의 디지털 신호와 해당 노드의 칩 순열의 곱 연산을 통해 구한 값을 모두 더하여 값의 합을 노드수로 나눠 비트를 검출할 수 있다.
+
+<img src ="https://user-images.githubusercontent.com/75229881/127096710-ea070f47-2b79-4883-af30-b07280f5cbc7.png " width="80%">
+
+---
 
