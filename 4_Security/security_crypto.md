@@ -17,6 +17,8 @@
 * AES
   * 128/192,256 비트 블록, 키
   * 10, 12, 14 라운드로 구성, 비 페이스텔 구조
+  * 순서
+    * Add Round Key >> [S-box(Substition bytes) >> Shift Row >> Mix Column >> Add Round Key] * 라운드 수
 * IDEA
   * 64비트 블록, 128비트 키
   * PGP의 암호 알고리즘으로 채택

@@ -166,3 +166,57 @@
 
 ---
 
+### 마이크로 오퍼레이션
+
+```
+Instruction Cycle Code,
+00 : Fetch Cycle 
+01 : Indirect Cycle 
+10 : Execute Cycle 
+11 : Interrupt Cycle 
+```
+
+* Fetch
+  * t1 : MAR <- PC
+    * 명령어가 저장된 주소를 MAR로 전송
+    * **주소버스**를 통해 주소를 전달받고 **제어버스**를 통해 Read 명령을 실행
+  * t2 : MBR <- M[MAR], PC <- PC+1
+    * 메모리에서 명령어를 인출하여 MBR로 전송
+    * **데이터버스**를 통해 메모리에 저장된 데이터를 반환
+  * t3 : IR <- MBR
+    * 명령어 디코딩을 위해 MBR의 데이터를 IR로 전송 및 PC는 다음 주소를 가리킴
+    * 이후 IR에서 명령어 디코딩 및 실행하여 **제어버스**를 통해 제어신호를 전달
+* Indirect
+  * t1 : MAR <- IR[Address]
+  * t2 : MBR <- M[MAR]
+  * t3 : IR[Address] <- MBR[Address]
+* Execute
+  * ADD R, X (레지스터 R에 X의 내용을 더하라)
+  * t1 : MAR <- IR[Address]
+  * t2 : MBR <- M[MAR]
+  * t3 : R <- R + MBR
+* Interrupt
+  * t1 : MBR <- PC
+  * t2 : MAR <- Save Address, PC <- Routine Address
+  * t3 : M[MAR] <- MBR
+
+---
+
+### 버스
+
+```
+버스대역폭 = 버스의 클럭 주파수 X 데이터 버스의 폭
+ex) 
+버스의 클록 주파수가 100Mhz이고 데이터 버스의 폭이 32Bit(4Byte)
+-> 400 MByte/sec
+```
+
+**시스템버스**
+
+* 주소버스
+* 제어버스
+* 데이터버스
+
+**I/O 버스**
+
+---
