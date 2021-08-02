@@ -23,6 +23,8 @@ Computer Science Knowledge Repository
 
 [SQL](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_sql.md)
 
+[인덱스](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_index.md)  
+
 [Hadoop](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_hadoop.md)
 
 <br><br>
@@ -59,6 +61,8 @@ Computer Science Knowledge Repository
 ## 프로그래밍
 
 [Algorithm](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/algorithm.md)
+
+[Basic Knowledge](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/basic.md)
 
 [C++STL](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/c%2B%2Bstl.md)
 
