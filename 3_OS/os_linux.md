@@ -102,7 +102,7 @@
 * cd : 이동
 * mkdir(Make Directory) : 디렉토리 생성
 * rmdir : 디렉토리 삭제
-* cat : 파일 내용 출력
+* cat(catenate) : 파일 내용 출력
 * cp : 복사
 * touch : 파일의 접근 및 수정 시간 변경
 * tail : 로그파일 변경을 실시간으로 확인가능

@@ -220,3 +220,68 @@ ex)
 **I/O 버스**
 
 ---
+
+### Instruction Set
+
+**Instruction**
+
+* Opcode + Operand 구성
+  * **3 + 6 = 9** 라는 연산이 있을 때 '+' 이 **Opcode** 이고 3, 6 이 **Operand**
+
+**Number of Address**
+
+* 3 주소
+  * Operand1, Operand2, Operand3(Result) 로 구성
+  * A = B + C
+* 2 주소
+  * A = A + B
+* 1 주소
+  * AC <- A
+* 0 주소
+  * 주소가 필요없는 명령, 스택을 활용한다.
+  * PUSH A
+
+**Addressing Mode**
+
+>Instruction Fetch 되어 있기 때문에 명령어는 CPU에 있다. 
+>
+>그리고 대부분의 데이터는 memory에 있다
+
+**메모리 접근**
+
+* Immediate Addressing
+  * 데이터가 Memory에 있는게 아니라 명령어 안에 있는 것
+    * ADD 5 (Operand안에 5라는 **데이터**가 있음)
+* Direct Addressing
+  * Operand에 Memory의 주소가 있음
+  * EA(Effective address) = A
+* Indirect Addressing
+  * 메모리에 데이터의 포인터
+  * EA = (A)
+
+**레지스터 접근**
+
+* Register Addressing
+  * 메모리 참조 필요없음 / 주소 제한적(레지스터 몇개 없음)
+  * EA = R
+* Register Indirect Addressing
+  * 레지스터에 데이터의 포인터 / 메모리 참조 
+  * EA = (R)
+
+**Displacement Addressing(변위주소)**
+
+> EA = A + (R)의 형태
+
+* **Relative addressing**
+  * 변위정보는 PC 값
+  * 프로그램 카운터는 알아서 increment를 해주는 특징이 있다. 32 비트면 4만큼 64비트면 8만큼 increment한다. 
+  * 알아서 increment를 시켜주니 Relative Addressing이라고 한다.
+  * EA = A + (PC)
+* **Base-Register addressing** 
+  * 변위정보는 A
+  * EA = A + (R)
+* **Indexing Addressing** 
+  * 변위정보는 레지스터
+  * EA = A + (R)
+
+---
