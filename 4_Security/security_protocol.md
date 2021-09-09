@@ -30,6 +30,8 @@
 
 ### SSL/TLS Protocol stack
 
+> **단편화->압축->MAC->암호화->전송**
+
 ![image](https://user-images.githubusercontent.com/75229881/111439655-eee03c00-8748-11eb-8a7c-4e67b1ec22b2.png)
 
 * 상위 프로토콜 : Handshake 관련
@@ -90,28 +92,6 @@
 * Google CA와 같은 CA회사의 인증서는 이러한 Root 인증서에 요청하여 root 인증서의 개인키를 통해 암호화되어 신뢰성을 보장받는다. 따라서, **Google CA의 인증서의 내용물에 대한 해시 값을, Geotrust가 Geotrust의 비밀 키로 암호화 해준것일테니, Google CA 또한 신뢰할 수 있다.**
 * 여기서 해시값은 인증서의 주요정보를 모아 SHA256등의 해쉬 알고리즘을 이용하여 해쉬를 수행하고, 이렇게 해서 나온 해시값을 인증서의 **Finger Print(지문)**이라고 한다. 이렇게 나온 해시값(Finger Print)을 발급자(issuer)(CA)의 개인키로 암호화한 값이 **서명값(Digital Signing)**이다.
 * CA의 공개키로 서명값을 복호화했을 때 이러한 해시값의 비교를 통해 해당 인증서의 무결성을 검증할 수 있다.
-
----
-
-### Port number
-
-* (1) TCPMUX : TCP Port service multiplexer
-* (7) ECHO 
-* (20) FTP - DATA : FTP 데이터전송
-* (21) FTP - CONTROL : FTP 전송 제어
-* (22) SSH
-* (23) TELNET : 암호화되지 않은 텍스트 통신
-* (25) SMTP 
-* (53) DNS
-* (69) TFTP 
-* (80) HTTP
-* (88) Kerberos
-* (110) POP3
-* (123) NTP : Network Time Protocol, 시간 동기화 프로토콜
-* (143) IMAP
-* (161) SNMP
-* (179) BGP
-* (443) HTTPS
 
 ---
 

@@ -19,7 +19,7 @@
 
 ### FTP
 
-* 포트 20, 21
+* 포트 20(데이터 전송), 21(제어신호 전송)
 * File Transfer Protocol
 * FTPS = FTP + SSL
 * sFTP = FTP + SSH (22번 포트)
