@@ -68,6 +68,8 @@ Computer Science Knowledge Repository
 
 [Python](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/python.md)
 
+[Java](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/java.md)
+
 <br><br>
 
 ## 네트워크/통신 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/7_Network/network.md)
