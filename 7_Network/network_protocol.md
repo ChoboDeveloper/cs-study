@@ -25,6 +25,13 @@
 * sFTP = FTP + SSH (22번 포트)
 * SSL은 TCP/IP의 암호화, SSH는 Telnet(원격접속), 데이터전송 암호화
 
+**Mode**
+
+* Active
+  * 클라이언트가 포트 열고 서버에게 알림
+* Passive
+  * 서버가 포트를 알려줌
+
 ---
 
 ### HTTP
