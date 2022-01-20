@@ -6,7 +6,11 @@
 
 **Read Uncommited** : Dirty Read, Non-repeatable Read, Phantom Read 발생
 
+* Commit 되지 않은 데이터를 읽을 수 있다.
+
 **Read Committed** :  Dirty Read 방지 / Non-repeatable Read, Phantom Read 발생
+
+* Commit 된 데이터만 읽을 수 있다.
 
 **Repeatable Read** : Dirty Read, Non-repeatable Read 방지 / Phantom Read 발생
 
@@ -14,9 +18,9 @@
 
 > Dirty Read : T1이 트랜잭션 도중 T2가 값을 읽었으나 Rollback이 일어나면 발생 (Read date Disappeared)
 >
-> Non-repeatable Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Update) T1이 다시 한번 데이터를 읽을 때 생기는 문제 (Read Data Changed)
+> Non-repeatable Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Update) T1이 다시 한번 데이터를 읽을 때 생기는 문제 (Read Data Changed) - 읽은 값이 달라졌다?
 >
-> Phantom Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Insert) T1이 다시 한번 데이터를 읽을 때 생기는 문제, (Non-Read Data Inserted)
+> Phantom Read : T1이 데이터를 읽고 T2가 데이터를 쓰고(Insert) T1이 다시 한번 데이터를 읽을 때 생기는 문제, (Non-Read Data Inserted) - 모르는 값이 생겼다?
 
 ---
 

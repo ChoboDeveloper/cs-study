@@ -186,3 +186,18 @@ SNR 공식) SNR[db] = 10log(S/N)
 * (443) HTTPS
 
 ---
+
+### 국제표준
+
+**IMT**
+
+* IMT-2000 : 3G 네트워크
+* IMT-Advanced : 4G, LTE 네트워크
+* IMT-2020 : 5G 네트워크
+
+---
+
+
+
+
+
