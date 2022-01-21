@@ -349,6 +349,16 @@
 
 * 가상 메모리의 주소를 물리 주소로 변환하는 기능
 
+**Shadowing**
+
+* 실행파일 전체를 DRAM에 올리고 사용하는 것
+* RAM 용량이 제한적인데다가, SW크기는 점점 커지는 경우 Shadowing은 불가능
+
+**Demand Paging**
+
+* Shadowing의 한계를 극복하기 위해 사용
+* 요구 페이징을 위해 MMU를 필요로 한다.
+
 ---
 
 ### Critical Section
