@@ -2,38 +2,6 @@
 
 <br>
 
-### 디스크 스케줄링
-
-* FCFS
-
-* SSTF 
-
-* SCAN
-
-  * 좌우 왕복하면서 가는 길에 처리한다
-
-  ![image](https://user-images.githubusercontent.com/75229881/110737022-fa76c300-826f-11eb-960a-27499f930912.png)
-
-  > N-step-SCAN
-  >
-  > 디스크 헤더가 n개의 요청만 받아들이고 이들만 수행한다
-  >
-  > 만약 n이 엄청 큰 숫자이면 SCAN과 다를게 없고, n이 1이면 FCFS와 다를게 없다
-  >
-  > *response-time-interval*을 줄일 수 있다
-
-* C-SCAN
-
-  * 한 쪽 방향으로만 이동한다
-
-  ![image](https://user-images.githubusercontent.com/75229881/110737211-4a558a00-8270-11eb-896a-7a7f71f22823.png)
-
-* LOOK/C-LOOK
-
-  * 끝까지는 안간다
-
-  ![image](https://user-images.githubusercontent.com/75229881/110737261-63f6d180-8270-11eb-8cbf-d2e8dff088c7.png)
-
 ---
 
 ### 제어장치의 구성요소
@@ -107,6 +75,7 @@
   * 실행시간이 짧은 스케줄 먼저 실행
 * HRN
   * (대기시간 + 실행시간) / 실행시간으로 우선순위를 결정, 높을수록 우선순위가 높음
+  * **(대+실)/실**
 
 **선점**
 
@@ -136,8 +105,43 @@
   * 참조비트와 변형비트를 사용
   * 변형비트는 페이지가 수정되었을 때 1로 set
   * 참조비트가 변형비트보다 우선순위가 높다
+  * **NUR -> R/R(1.Reference/2.Replace)**
 * SCR(Second-Chance Replacement)
   * FIFO에서 참조된 페이지는 Reference bit을 1로 설정하고 만약 1일 때, 교체대상이라면 0으로 설정하고 한 번의 기회를 부여
+
+---
+
+### 디스크 스케줄링
+
+* FCFS
+
+* SSTF 
+
+* SCAN
+
+  * 좌우 왕복하면서 가는 길에 처리한다
+
+  ![image](https://user-images.githubusercontent.com/75229881/110737022-fa76c300-826f-11eb-960a-27499f930912.png)
+
+  > N-step-SCAN
+  >
+  > 디스크 헤더가 n개의 요청만 받아들이고 이들만 수행한다
+  >
+  > 만약 n이 엄청 큰 숫자이면 SCAN과 다를게 없고, n이 1이면 FCFS와 다를게 없다
+  >
+  > *response-time-interval*을 줄일 수 있다
+
+* C-SCAN
+
+  * 한 쪽 방향으로만 이동한다
+
+  ![image](https://user-images.githubusercontent.com/75229881/110737211-4a558a00-8270-11eb-896a-7a7f71f22823.png)
+
+* LOOK/C-LOOK
+
+  * 끝까지는 안간다
+
+  ![image](https://user-images.githubusercontent.com/75229881/110737261-63f6d180-8270-11eb-8cbf-d2e8dff088c7.png)
 
 ---
 
@@ -386,5 +390,4 @@
 
 ---
 
-
-
+### 

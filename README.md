@@ -1,4 +1,4 @@
-# Computer Science Study
+#  Computer Science Study
 Computer Science Knowledge Repository
 
 <br>
@@ -12,8 +12,6 @@ Computer Science Knowledge Repository
 [테스트](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_test.md)  
 
 [국제표준](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_iso.md)  
-
-
 
 <br><br>
 
@@ -77,6 +75,8 @@ Computer Science Knowledge Repository
 [네트워크 프로토콜](https://github.com/ChoboDeveloper/cs-study/blob/main/7_Network/network_protocol.md)
 
 [전자메일](https://github.com/ChoboDeveloper/cs-study/blob/main/7_Network/network_mail.md)
+
+[정보통신](https://github.com/ChoboDeveloper/cs-study/blob/main/7_Network/ict.md)
 
 <br><br>
 

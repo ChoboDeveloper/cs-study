@@ -1,5 +1,7 @@
 # SQL
 
+<br>
+
 ### Assertion
 
 * relation의 어떠한 change라도 발생하면 그 즉시 발동된다.
@@ -19,3 +21,7 @@
 
 ---
 
+### 제약조건
+
+* CHECK
+  * 입력값을 제한한다. CHECK([조건절])
