@@ -11,7 +11,7 @@
 
 ### GoF 디자인 패턴
 
-<img src = "https://user-images.githubusercontent.com/75229881/151336468-70f31d5f-9e31-4f9b-be00-6642d7705137.png" width="90%">
+<img src = "https://user-images.githubusercontent.com/75229881/151336468-70f31d5f-9e31-4f9b-be00-6642d7705137.png" width="80%">
 
 #### 1. 생성패턴
 

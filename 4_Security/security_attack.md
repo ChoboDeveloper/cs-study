@@ -244,7 +244,7 @@ nmap, 네트워크 스캐닝 유틸리티로 위와같은 스텔스 포트 스�
   * Boink는 처음에는 정상적인 순서의 Fragment를 보내다가 점점 순서번호가 어긋난 패킷을 보내는 방법
 * Slow HTTP Header(Slowloris)
 
-  * HTTP Header 정보를 비정상적으로 조작하여 웹서버가 온전한 Header정보가 올때 까지 대기하도록 함
+  * HTTP Header 정보를 비정상적으로 조작하여 웹서버가 온전한 Header정보가 올 때까지 대기하도록 함
 * Slow HTTP POST
 
   * POST 메소드로 대량의 데이터를 장시간에 걸쳐 분할 전송하여 연결을 장시간 유지

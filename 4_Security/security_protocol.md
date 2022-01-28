@@ -49,11 +49,11 @@
 
 > 상위의 Handshake 프로토콜들의 메세지와 Application 메시지를 수납하여, 레코드 단위로 운반한다. 그리고 분할, 압축, 무결성, 인증등의 기능을 제공한다.
 
-* 데이터를 동일한 크기의 블록으로 단편화(Fragmentation)
-* 각 블록을 압축(Compression)
-* 각 블록마다 MAC(Message Authentication Code) 생성
-* 각 블록+MAC을 암호화(Encryption)
-* SSL Record Protocol 헤더 추가
+1. 데이터를 동일한 크기의 블록으로 **단편화(Fragmentation)**
+2. 각 블록을 **압축(Compression)**
+3. 각 블록마다 **MAC(Message Authentication Code)** 생성
+4. 각 블록+MAC을 **암호화(Encryption)**
+5. SSL Record Protocol 헤더 추가
 
 ---
 
@@ -181,6 +181,12 @@
 * TCP를 활용하여 안전한 소켓통신 보장
 * 전송계층, 인증, 연결 프로토콜로 구성
 * 한 개의 SSH 연결로 다중화된 통신채널 운용가능
+
+---
+
+### DTLS
+
+* UDP에서 구현된 SSL
 
 ---
 
