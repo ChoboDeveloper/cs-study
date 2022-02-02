@@ -11,7 +11,9 @@ Computer Science Knowledge Repository
 
 [테스트](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_test.md)  
 
-[국제표준](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_iso.md)  
+[객체지향](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_oop.md)  
+
+[ISO](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_iso.md) 
 
 <br><br>
 
@@ -23,7 +25,7 @@ Computer Science Knowledge Repository
 
 [인덱스](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_index.md)  
 
-[Hadoop](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_hadoop.md)
+[빅데이터](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_bigdata.md)
 
 <br><br>
 
@@ -66,7 +68,9 @@ Computer Science Knowledge Repository
 
 [Python](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/python.md)
 
-[Java](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/java.md)
+[Java](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/java.md) 
+
+[AI](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/ai.md) 
 
 <br><br>
 

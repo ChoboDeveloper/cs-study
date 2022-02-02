@@ -50,6 +50,22 @@
 
 ---
 
+### UDP
+
+* 재전송 없음, **체크섬** 있음
+
+| TCP                                                          | UDP                                                          |
+| :----------------------------------------------------------- | ------------------------------------------------------------ |
+| Connection-oriented protocol (연결지향형 프로토콜)           | Connection-less protocol (비 연결지향형 프로토콜)            |
+| Connection by **byte** stream (바이트 스트림을 통한 연결)    | Connection by **message** stream (메세지 스트림을 통한 연결) |
+| Congestion / Flow control (혼잡제어, 흐름제어)               | NO Congestion / Flow control (혼잡제어와 흐름제어 지원 X)    |
+| Ordered, Lower speed (순서 보장, 상대적으로 느림)            | Not ordered, Higer speed (순서 보장되지 않음, 상대적으로 빠름) |
+| Reliable data transmission (신뢰성 있는 데이터 전송 - 안정적) | Unreliable data transmission (데이터 전송 보장 X)            |
+| TCP packet : Segment (세그먼트 TCP 패킷)                     | UDP packet : Datagram (데이터그램 UDP 패킷)                  |
+| HTTP, Email, File transfer 에서 사용                         | **DNS**, Broadcasting (도메인, 실시간 동영상 서비스에서 사용) |
+
+---
+
 ### IPv6
 
 * 128비트 주소를 사용
