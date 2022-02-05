@@ -28,3 +28,22 @@
 
 ---
 
+### GROUP BY
+
+* GROUP BY 뒤의 변수 제외하고는 일반행을 SELECT 할 수 없다.
+
+```sql
+SELECT ID, COUNT(FIRST_CAT), MAX(NUMS)
+FROM sql_test_b
+Group BY ID;
+```
+
+---
+
+### NULL
+
+* NULL에 대한 산술연산의 결과는 NULL이다
+  * NULL + 100 = NULL
+
+---
+
