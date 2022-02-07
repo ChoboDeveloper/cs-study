@@ -21,7 +21,7 @@
 
 ---
 
-### 제약조건
+### 조건연산자
 
 * CHECK
   * 입력값을 제한한다. CHECK([조건절])
@@ -44,6 +44,18 @@ Group BY ID;
 
 * NULL에 대한 산술연산의 결과는 NULL이다
   * NULL + 100 = NULL
+
+---
+
+### 집합연산자
+
+* UNION
+* UNION ALL
+  * UNION과의 차이점은, 중복된 항목도 모두 조회한다는 것
+* INTERSECT
+  * 교집합
+* MINUS
+  * 차집합
 
 ---
 

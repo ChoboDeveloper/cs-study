@@ -126,6 +126,7 @@
   * 모든 파일의 퍼미션정보를 볼 수 있음
   *  d/rwx/rwx/rwx 여기서 d 다음으로 순서대로 소유자, 그룹, 일반유저에 대한 권한
   * 맨 앞글자 d는 디렉토리(폴더), -는 일반파일
+  
 * chown : 파일 및 디렉토리의 소유권을 바꾸는 명령어
 
   * chown [옵션] [소유권자:그룹식별자] [파일명]
@@ -135,25 +136,55 @@
     *  chown :member1 test.c (파일에 대해 그룹을 members1로 바꾼다)
     *  chown member1: test.c (파일에 대해 소유자 및 그룹을 members1로 바꾼다.)
     *  chown member1:member2 test.c (파일에 대해 소유자는 member1, 그룹은 member2로 바꾼다)
+  
 * chmod : 파일, 디렉토리의 권한을 변경하는 명령어
   * chmod [권한값] [파일명]
+  
   * **u**ser, **g**roup, **o**thers, **a**ll
+  
   * +는 권한 부여, -는 권한 취소
+  
   * 예제
     * chmod **g+w** test.c (그룹에 쓰기 권한을 준다)
     * chmod **o-r** test.c (기타사용자에게 읽기 권한을 빼앗는다)
     *  chmod **707** test.c (user, other 은 모두 rwx로 변경하고 group은 모든 권한을 제거)
+    
   * 특수권한
-    - 4777= SetUid 설정 때 4000을 더함
-    - 2777= SetGid 설정 때 2000을 더함
-    - 1777= Sticky bit 설정 때 1000을 더함
-    - chmod **u+s** test.c 처럼 사용가능
-    - setUid시 실행권한이 있으면 s표기, 없으면 S표기
+    
+    * **s(SetUID), s(SetGID), t(StickyBit)**
+      * 실행권한 자리 "x" 대신에 s, s, t
+      * 파일에 실행권한 'x'가 없었으면 대문자 S, S, T
+    * 4777= SetUid 설정 때 4000을 더함
+    * 2777= SetGid 설정 때 2000을 더함
+    * 1777= Sticky bit 설정 때 1000을 더함
+    * chmod **u+s** test.c 처럼 사용가능
+    * setUid시 실행권한이 있으면 s표기, 없으면 S표기
+    
+  * 예제
+  
+    * ```shell
+      -rw-r--r-- 1 user1 manager 17 Mar 24 03:17 FILE
+      ```
+  
+    * -(파일타입) / rw-(소유자) r--(그룹) r--(기타사용자)
+  
+    * user1(파일소유자)
+  
+    * manager(그룹)
+  
+    * ```
+      -rwsr--r-- 1 user2 manager 17 Mar 24 03:17 first
+      ```
+  
+    * chmod 4744 first(SetUid 설정)
+  
 * umask : 새로 만들어진 파일에 파일 권한을 어떻게 설정할지를 제어하는 마스크 설정을 결정하는 명령어
 
   * 디렉토리=777, 파일=666 에서 umask값을 뺀다
+  
 * **grep** : 파일 내 정규표현식을 포함한 모든 행을 검색 및 출력하는 명령어
   *  파일의 내용이나 콘솔에 출력물 중에 특정 문자열을 찾는데 널리 사용된다.
+  
 * **find** : 원하는 조건의 파일, 디렉토리 모든 것을 검색한다.
 
 ---
