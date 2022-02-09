@@ -181,7 +181,8 @@
 * LOOK/C-LOOK
 
   * 끝까지는 안간다
-
+  * C-LOOK은 한 쪽 방향으로 움직인다
+  
   ![image](https://user-images.githubusercontent.com/75229881/110737261-63f6d180-8270-11eb-8cbf-d2e8dff088c7.png)
 
 <br>
