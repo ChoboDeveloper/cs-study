@@ -89,7 +89,7 @@
 
 #### /usr
 
-시스템이 아닌 일반사용자들이 주로 사용하는 디렉토리. 즉, c++, chsh, cpp, crontab, du, find등과 같이 일반사용자들용 명령어들은 /usr/bin 에 위치한다.
+이 계층에는 **시스템이 아닌 사용자가** 실행할 프로그램들이 저장되며, 해당 계층에는 반드시 read-only 데이터만 존재해야한다.
 
 #### /usr/bin/
 
@@ -216,6 +216,14 @@
   * FTP 로그파일
 * /etc/passwd
   * 계정정보 및 패스워드 파일
+  
+  * 예시
+  
+    ```
+    postgres:x:111:121:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+    (사용자명:PW:UID:GID:정보:홈디렉토리:Shell환경)
+    ```
+  
   * pwconv 명령어로 shadow 활성화 / pwunconv 비활성화
 * /etc/shadow
   * 암호화된 패스워드 파일

@@ -96,6 +96,39 @@
 
 ---
 
+### 뷰
+
+* 뷰는 사용자에게 접근이 허용된 자료만을 제한적으로 보여주기 위해 하나 이상의 기본 테이블로부터 유도된, 이름을 가지는 가상 테이블
+
+* 특징
+
+  * 뷰는 ALTER문을 사용하여 변경할 수 없으므로 필요한 경우는 **삭제한 후 재생성**한다.
+
+  * 독립적인 인덱스를 가질 수 없다.
+
+  * 생성문
+
+    ```sqlite
+    CREATE OR REPLACE VIEW TEST_TABLE_VW
+            AS SELECT A.ID
+                            ,A.NAME
+                            ,A.AMT
+                            ,B.CHECK_YN
+               FROM TEST_TABLE_ONE A,
+                         TEST_TABLE_TWO B
+                     WHERE A.IDX = B.IDX
+    ```
+
+  * 삭제문
+
+    ```sql
+    DROP VIEW 뷰이름 RESTRICT or CASCADE
+    RESTRICT : 뷰를 다른곳에서 참조하고 있으면 삭제가 취소된다.
+    CASCADE : 뷰를 참조하는 다른 뷰나 제약 조건까지 모두 삭제된다.
+    ```
+
+---
+
 ### 시스템 카탈로그
 
 **카탈로그 특징**
