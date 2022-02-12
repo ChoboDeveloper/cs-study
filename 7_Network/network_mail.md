@@ -12,7 +12,7 @@
 
 
 
-<img src = "https://user-images.githubusercontent.com/75229881/116352002-813b2b80-a82f-11eb-834a-03223485803e.png" width="70%">
+<img src = "https://user-images.githubusercontent.com/75229881/116352002-813b2b80-a82f-11eb-834a-03223485803e.png" width="50%">
 
 **구성요소**
 
