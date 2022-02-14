@@ -9,6 +9,37 @@
 
 ---
 
+### SOLID
+
+**SRP(Single Responsibility Principle)**
+
+* 클래스는 하나의 기능만을 가져야 한다.
+* 응집도는 높고 결합도는 낮은 프로그램을 설계한다.
+
+**OCP(Open Closed Principle)**
+
+* 기존의 코드를 수정하지 않고(Closed) 새로운 기능을 추가(Open)할 수 있도록 설계한다.
+* 이를 위해 자주 사용되는 문법이 인터페이스(Interface)이다.
+* 이와 같은 설계를 디자인 패턴에서는 Strategy Pattern(전략 패턴)이라고 한다.
+
+**LSP(Liskov Substitution Principle)**
+
+* 자식 클래스는 부모클래스에서 가능한 행위를 수행할 수 있어야 한다.
+
+**ISP(Interface Segregation Principle)**
+
+> [[SOLID\] 인터페이스 분리 원칙(ISP)이란? (tistory.com)](https://steady-coding.tistory.com/385)
+
+* 한 클래스는 자신이 사용하지 않는 인터페이스는 구현하지 말아야 한다. 하나의 일반적인 인터페이스보다는, 여러 개의 구체적인 인터페이스가 낫다.
+
+**DIP(Dependency Inversion Principle)**
+
+* 의존 관계를 맺을 때, 변화하기 쉬운것 보단 변화하기 어려운 것에 의존해야 한다는 원칙이다.
+* DIP를 만족한다는 것은 의존관계를 맺을 때, 구체적인 클래스보다 인터페이스나 추상 클래스와 관계를 맺는다는 것을 의미한다.
+* DIP를 만족하면 '**의존성 주입**' 이라는 기술로 변화에 유연한 설계를 할 수 있다.
+
+---
+
 ### GoF 디자인 패턴
 
 <img src = "https://user-images.githubusercontent.com/75229881/151336468-70f31d5f-9e31-4f9b-be00-6642d7705137.png" width="80%">

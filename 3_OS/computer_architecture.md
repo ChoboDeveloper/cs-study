@@ -377,3 +377,15 @@ $$
 
 ---
 
+### 유니버셜 게이트
+
+> 범용게이트라고 부른다
+
+* Universal gate는 한 종류만으로 모든 boolean expression을 구현할 수 있는 게이트를 말한다
+* 종류
+  * NOR, NAND
+  * MUX
+  * OR + Decoder
+
+---
+
