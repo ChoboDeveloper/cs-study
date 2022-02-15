@@ -41,6 +41,7 @@
 
 <img src = "https://user-images.githubusercontent.com/75229881/151334550-707f5967-24aa-49dc-8ed5-4fcd5fffdddb.png" width="60%">
 
+* 실시간 시스템에서 사용
 * 마스터 컴포넌트에서 슬레이브 컴포넌트로 작업 분할 -> 슬레이브 컴포넌트에서 처리된 결과물을 다시 돌려받는 방식
 
 **파이프-필터 패턴**
