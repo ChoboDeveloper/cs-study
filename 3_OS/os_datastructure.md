@@ -86,6 +86,8 @@ ex) "ABBCCCDDDDEEEEEFFFFFF"
 
   > **Synonym)** 동일한 홈 주소로 인하여 충돌이 일어난 레코드의 집합
 
+  * 선형조사법
+    * index = index + 1
   * 제산법
     * index = key % bucket_size
   * 폴딩법

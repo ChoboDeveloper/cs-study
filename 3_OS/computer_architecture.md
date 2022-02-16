@@ -389,3 +389,13 @@ $$
 
 ---
 
+### XNOR
+
+![image](https://user-images.githubusercontent.com/75229881/154259818-e0852eb9-6199-4dba-8ecc-20ff1f2daef6.png)
+
+![image](https://user-images.githubusercontent.com/75229881/154259863-7fb6a27a-1ad2-4e9c-916d-f6b78b256136.png)
+
+* XNOR 게이트는 ’1‘ 상태로 입력되는 입력 단자의 수가 짝수 개이면 출력이 ’1‘이 되고 그렇지 않으면 ’0‘이 된다.
+
+---
+

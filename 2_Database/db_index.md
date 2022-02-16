@@ -143,6 +143,8 @@ HashTable은 동등 연산(=)에 특화되어있어 데이터베이스의 자료
 
 **인덱스 순차 파일(ISAM)**
 
+* Indexed Sequential Access Method
+
 * 키 값에 따라 순차적으로 정렬된 데이터를 저장하는 데이터 지역(Data Area)과 이 지역에 대한 포인터를 가진 색인 지역(Index Area)으로 구성된 파일
 * 구성
   - **데이터 구역**은 데이터 레코드를 저장
@@ -158,7 +160,7 @@ HashTable은 동등 연산(=)에 특화되어있어 데이터베이스의 자료
 
 **VSAM 파일**
 
-* VASM(Virtual Storage Access Method) 파일은 동적 인덱스 방법을 이용한 색인 순차 파일이다.
+* VASM(Virtual Storage Access Method) 파일은 동적 인덱스 방법(**B<sup>+</sup>-tree**)을 이용한 색인 순차 파일이다
 * 구성
   * **제어 구간(Control Interval)** : 데이터 레코드가 저장되는 부분
   * **제어 구역(Control Area)** : 몇 개의 제어 구간을 모아 놓은 것
