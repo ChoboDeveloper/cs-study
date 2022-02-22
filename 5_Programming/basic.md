@@ -56,3 +56,16 @@
 
 ---
 
+### 컴파일 순서
+
+1. 전처리(Preprocessing)
+   * include 라이브러리, define 치환 등
+2. Compile
+   * 어셈블러 코드 생성
+3. Assemble
+   * 목적파일(hello.o) 생성
+4. Link
+   * hello 실행파일 생성
+
+---
+

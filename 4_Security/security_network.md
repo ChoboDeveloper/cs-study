@@ -156,13 +156,12 @@
 
 ### IDS 판정
 
-|                 | 정상 패킷            | 비정상 패킷          |
-| --------------- | -------------------- | -------------------- |
-| 정상으로 탐지   | True Positive        | False Negative(미탐) |
-| 비정상으로 탐지 | False Positive(오탐) | True Negative        |
+**Confusion Matrix**
 
-* True : 맞음, False : 틀림
-* Positive : 정상패킷, Negative : 비정상 패킷
+|           | Positive             | Negative             |
+| --------- | -------------------- | -------------------- |
+| **True**  | True Positive        | False Negative(오탐) |
+| **False** | False Positive(미탐) | True Negative        |
 
 ---
 
