@@ -27,6 +27,55 @@
 
 ---
 
+### BSC
+
+| **문자**                       | **기능**                                                 |
+| ------------------------------ | -------------------------------------------------------- |
+| SYN(SYNchronous idle)          | 문자 동기                                                |
+| SOH(Start Of Heading)          | 헤딩의 시작                                              |
+| STX(Start of TeXt)             | 본문의 시작 및 헤딩의 종료                               |
+| ETX(End of TeXt)               | 본문의 종료                                              |
+| ETB(End of Transmission Block) | 블록의 종료                                              |
+| EOT(End Of Transmission)       | 전송 종료 및 데이터 링크의 해제                          |
+| **ENQ**(ENQuiry)               | 상대편에 데이터 **링크 설정 및 응답을 요구**             |
+| **DLE**(Data Link Escape)      | 전송 제어 문자 앞에 삽입하여 **전송 제어 문자임을 알림** |
+| ACK(ACKnowledge)               | 수신된 메시지에 대한 긍정 응답                           |
+| NAK(Negative AcKnowledge)      | 수신된 메시지에 대한 부정 응답                           |
+
+---
+
+### HDLC
+
+
+
+![image](https://user-images.githubusercontent.com/75229881/155316922-2a9be9b9-a004-484c-9589-e6d6e1a32ba8.png)
+
+* Flag
+
+* 주소부
+
+* 제어부
+
+  * 정보 프레임 (Information,I-frame)
+    * 제어필드 첫 비트가 '0'인 경우
+    * `사용자 정보 + 제어 정보`를 실음
+
+  * 감시 프레임 (Supervisory,S-frame) 
+    * 제어필드 '10'인 경우
+    * 오직 `제어 정보` 만 실음
+
+  * 비 번호 프레임 (Unnumbered,U-frame)
+    * 제어필드 '11'인 경우
+    * `링크관리정보`를 실음
+
+```
+비트스터핑
+* 데이터를 실은 프레임들의 경계를 구분하기 위해 통상 특정한 비트 배열(Preamble) 갖는 플래그 바이트(01111110)라 불리는 경계를 나타내는 바이트를 사용하는데, 만일 실제 데이터 내부에 동일한 비트 배열이 있게되는 경우를 방지하기 위해 의도적으로 5개의 1을 보내면서 다음 비트에 0을 삽입하는 비트 채우기(bit stuffing) 실시
+* 즉, 동기를 맞추기 위해 비트를 채우는 방식
+```
+
+---
+
 ### 지연
 
 **Processing Delay (처리 지연)**

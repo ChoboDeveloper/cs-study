@@ -189,7 +189,7 @@
 
 ---
 
-### 로그 명령어
+### 로그 관련
 
 * /var/log/messages
   * 로그 파일중 가장 중요하고 기본적인 부분으로 시스템이 운영되는 전반적인 내용이 기록되는 파일
@@ -209,22 +209,29 @@
 * /var/log/**btmp**
   * 실패한 로그인 시도에 대한 기록을 담고 있는 파일
   * **lastb** 명령어 사용
+* /var/log/xferlog
+  * FTP 로그파일
+
+---
+
+### 계정 관련
+
 * /var/account/**pacct**
   * 사용자별 명령실행 정보
   * binary 파일로 내용 확인시 **lastcomm** 명령어 사용
-* /var/log/xferlog
-  * FTP 로그파일
+
 * /etc/passwd
   * 계정정보 및 패스워드 파일
-  
+
   * 예시
-  
+
     ```
     postgres:x:111:121:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
     (사용자명:PW:UID:GID:정보:홈디렉토리:Shell환경)
     ```
-  
+
   * pwconv 명령어로 shadow 활성화 / pwunconv 비활성화
+
 * /etc/shadow
   * 암호화된 패스워드 파일
   * abcd:$Hashid$Salt$Hash vlaue:17562:0:99999:7:3::과 같이 구성
