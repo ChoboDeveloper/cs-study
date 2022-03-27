@@ -258,8 +258,9 @@ nmap, 네트워크 스캐닝 유틸리티로 위와같은 스텔스 포트 스�
 **HTTP 공격**
 
 * **Slowloris**
-* HTTP Header 정보를 비정상적으로 조작하여 웹서버가 온전한 Header정보가 올 때까지 대기하도록 함
-* Slow HTTP POST
+  * HTTP Header 정보를 비정상적으로 조작하여 웹서버가 온전한 Header정보가 올 때까지 대기하도록 함
+
+* Slow HTTP POST(RUDY)
 
   * POST 메소드로 대량의 데이터를 장시간에 걸쳐 분할 전송하여 연결을 장시간 유지
   * 예를들어,  Content-Length를 100000byte로 하고 데이터는 일정한 간격으로 1byte씩 전송
@@ -271,7 +272,9 @@ nmap, 네트워크 스캐닝 유틸리티로 위와같은 스텔스 포트 스�
   * with CC(cache-control)
     * HTTP 헤더의 Cache-Control: no-store, must-revalidate로 지정하여 웹 서버가 캐시를 사용하지 못하도록 하여 일반적인 DDOS보다 적은 양으로도 DOS 상태에 빠지게 만든다.
 * Hulk
+  * 웹서버의 가용량을 모두 사용하여 정상적인 서비스가 불가능하도록 하는 GET Flooding 공격 유형
   * URL의 파라미터를 지속적으로 변경하며 공격
+
 
 <br>
 

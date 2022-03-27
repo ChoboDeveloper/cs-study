@@ -28,3 +28,16 @@
 
 ---
 
+### WEB
+
+* XML
+  * 브라우저간 HTML 호환문제 해결
+  * 다목적 마크업 언어
+* SOAP(Simple Object Access Protocol)
+  * HTTP, SMTP등을 이용하여 XML을 교환하기 위한 프로토콜
+* WSDL(Web Service Description Lang)
+  * 웹서비스 관련 서식, 프로토콜을 표준적으로 기술하기 위한 언어
+  * XML로 작성되며, UDDI의 기초
+
+---
+
