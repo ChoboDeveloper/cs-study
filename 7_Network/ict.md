@@ -74,9 +74,24 @@
 * 즉, 동기를 맞추기 위해 비트를 채우는 방식
 ```
 
+<br>
+
+* 모드
+  * NRM, 정규응답모드
+    * 불균형적 링크 구성
+    * 주국이 세션을 열고, 종국들은 단지 음답만 함
+  * ABM, 비동기평형모드
+    * 균형적 링크 구성
+    * 각 국이 주국이자 종국으로 서로 대등하게 균형적으로 명령과 응답하며 동작
+  * ARM, 비동기응답모드
+    * 종국도 전송할 필요가 있는 특수한 경우에만 사용
+    * 종국은 주국의 허가없이 응답 가능
+
 ---
 
 ### 지연
+
+![image](https://user-images.githubusercontent.com/75229881/161549529-44790d78-b441-4faa-b92c-4c04c9e28f85.png)
 
 **Processing Delay (처리 지연)**
 
@@ -240,6 +255,14 @@ IEEE 802.11ax (Wi-Fi 6)
 
 ### IPv4
 
+**헤더구조**
+
+![img](http://www.ktword.co.kr/img_data/1859_1.jpg)
+
+* 최소 20바이트(Destination IP Address 까지)
+
+
+
 ---
 
 ### IPv6
@@ -259,5 +282,26 @@ IEEE 802.11ax (Wi-Fi 6)
 
 ---
 
+### 변조 관련
 
+* 심볼 오류
+  * ASK < FSK < PSK < QAM 순으로 심볼 오율이 감소
+    * M진 심볼오율 = 2진 심볼오율 * log<sub>2</sub>M
+* 비트오율
+  * Eb/No 값을 기준으로 하며 QPSK나 BPSK나 같다.
+* 전송속도
+  * 전송대역폭(B)과 전송속도(bps)의 관계는 R = B * log<sub>2</sub>M
+    * QPSK는 BPSK의 2배 속도이다(bps가 같을 경우)
+* 대역폭 효율
+  * 비트율/전송대역폭(R/B)
+    * log<sub>2</sub>M
+
+
+---
+
+### 부호화 방식
+
+![image](https://user-images.githubusercontent.com/75229881/161551842-7dc00a36-a90f-4751-9603-2e3b912255b2.png)
+
+---
 
