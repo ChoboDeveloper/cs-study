@@ -29,7 +29,7 @@
 **LSA(Local Security Authority)**
 
 * 모든 계정의 로그인 검증 및 접근권한 검사
-* 로컬보안정책을 집행한다
+* **로컬보안정책**을 집행한다
 
 **SAM(Security Account Manager)**
 
@@ -37,7 +37,7 @@
 
 **SRM(Security Reference Monitor)**
 
-* 인증된 사용자에게 SID 부여
+* 인증된 **사용자에게 SID 부여**
 * Secuirty ID를 바탕으로 접근제어
 
 ---
