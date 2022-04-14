@@ -13,18 +13,55 @@
 * IKE(Internet key Exchange)
   * 키 교환에 사용되는 프로토콜이며 UDP 500 포트를 사용
   * 대칭키 교환을 위해 DH를 활용한 IKE를 사용
-* 모드
+* 헤더모드
   * 전송모드
     * 헤더와 페이로드 사이에 AH/ESP가 위치한다.
   * 터널모드
     * 전체 패킷 앞에 AH/ESP가 위치하고 새로운 IP헤더로 데이터를 감싼다.
-
 * SA(Security Association)
   * IPsec을 이용해 보안 통신을 하기 위하여 종단점 끼리 맺는 보안 세션
   * 단방향이므로 2개의 SA 필요
   * SPI(Security Parameter Index), 목적지 IP, 보안 프로토콜 식별자(AH/ESP) 등으로 구성
 
 참고) 2계층에서 터널링 = PPTP, L2TP, L2F / 3계층에서 터널링 = IPsec
+
+<br>
+
+**IPSEC VPN 절차**
+
+* 모드1 - ISAKMP SA
+
+  1. SA 제안 - 사용할 암호화 및 인증 알고리즘을 제안 
+  2. DH group 교환 - Diffie-Hellman 공개 키와 기타 데이터를 전달
+  3. ISAKMP 세션을 인증. IKE SA가 설정되면 IPSec 협상(빠른 모드)이 시작
+
+  * ISAKMP
+    * **Hash** : 인증 정보 교환 시 인증 정보가 변질되지 않았음을 증명하기 위한 해쉬 코드 첨부에 사용되는 해쉬 알고리즘
+      (MD5, SHA)
+    * Authentication : 상대방 VPN을 인증하기 위한 방법
+      (Pre-shared Key, RSA Encryption, RSA Signature)
+    * **DH(Diffie-Hellman) Group** : 인증 정보를 암호화할 키를 생성하는 대칭키 교환 알고리즘으로 Phase 2에서 사용
+      (DH Group 1, DH Group 2, DH Group 5)
+    * Lifetime : Phase 1 Tunnel이 유지되는 시간, 다시 말해 새로운 키를 생성하는 주기를 의미
+      (통상적으로 86400초)
+    * Encryption : 키 교환 알고리즘과 함께 인증 정보를 암호화할 암호화 알고리즘
+      (AES, DES, 3DES)
+
+* 모드2 - IPSEC SA
+
+  1. IPSec SA 제안 및 협의
+  2. 패킷을 암호화할 암호화 키 생성 및 인증
+
+  * IPSEC
+    * **IPSec Protocol** : 패킷 인증/암호화를 위한 프로토콜 헤더 선택
+      (AH / ESP)
+    * **Encapsulation Mode** : IPSec 터널의 운용 모드 선택
+      (Transport / Tunnel)
+    * Encryption : 패킷을 암호화할 암호화 알고리즘 선택
+      (AES, DES, 3DES)
+    * Authentication : 패킷을 인증할 해쉬 알고리즘 선택
+      (MD5, SHA)
+    * Lifetime : Phase 2 Tunnel이 유지되는 시간, 다시 말해 Phase 1의 대칭키를 기반으로 키를 재생성하는 주기를 의미
 
 ---
 

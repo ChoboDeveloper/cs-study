@@ -9,11 +9,17 @@ Computer Science Knowledge Repository
 
 [아키텍처](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_architecture.md)  
 
-[테스트](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_test.md)  
-
 [객체지향](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_oop.md)  
 
 [ISO](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_iso.md) 
+
+[SDLC/1.요구사항분석](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_SDLC_1.RA.md)  
+
+[SDLC/2.모델링](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_SDLC_2.Design.md)  
+
+[SDLC/3.구현](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_SDLC_3.Implementation.md)  
+
+[SDLC/4.테스트](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_SDLC_4.test.md)  
 
 <br><br>
 
