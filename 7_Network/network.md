@@ -225,27 +225,7 @@
 
 <img src ="https://user-images.githubusercontent.com/75229881/127096710-ea070f47-2b79-4883-af30-b07280f5cbc7.png " width="80%">
 
----
 
-### Port number
-
-* (1) TCPMUX : TCP Port service multiplexer
-* (7) ECHO 
-* (20) FTP - DATA : FTP 데이터전송
-* (21) FTP - CONTROL : FTP 전송 제어
-* (22) SSH
-* (23) TELNET
-* (25) SMTP 
-* (53) DNS
-* (69) TFTP 
-* (80) HTTP
-* (88) Kerberos
-* (110) POP3
-* (123) NTP : Network Time Protocol, 시간 동기화 프로토콜
-* (143) IMAP
-* (161) SNMP
-* (179) BGP
-* (443) HTTPS
 
 ---
 
@@ -276,6 +256,36 @@
 |  3   |   1020   |  20  |     0     |  370   |
 
 
+
+---
+
+### SDN
+
+* 네트워킹 리소스를 가상화된 시스템으로 추상화하는 IT Infra에 대한 하나의 접근 방식
+* 개방형 API(오픈플로우)를 통해 네트워크의 트래픽 전달 동작을 소프트웨어 기반 컨트롤러에서 제어/관리하는 기술
+
+<br>
+
+**OpneFlow**
+
+* SDN(Software Defined Networking)의 가장 중요한 기술로서 평가받는 OpenFlow는 SDN에서 컨트롤러와 네트워크 장비간의 인터페이스를 위한 규격으로 사용되는 기술
+* SDN은 소프트웨어로 전환하는 것이 아니라 소프트웨어로 하드웨어를 통제하는 개념이다. 오픈플로우 스위치는 하나 이상의 플로우 테이블과 그룹 테이블을 가질 수 있다.
+* 구성요소
+  1. 플로우 테이블(flow table)
+     * 플로우 테이블은 리스트 형식으로 다수의 entry를 갖는다. 이러한 entry를 flow entry라고 하는데 flow entry는 3가지의 메인 컴포넌트들을 가지고 있다.
+     * match fields : 패킷의 매칭되는 field. ingress port와 packet header들 그리고 옵션적으로 이전 테이블에서 정의된 metadata등이 있다.
+     * counters : 매칭된 패킷의 통계적인 정보를 위해 패킷이 매칭될때 마다 여러가지의 counter를 사용하여 통계정보에 활용한다.
+     * instructions : 액션 set을 수정하거나 파이프라인 프로세싱을 진행한다.
+  2. 그룹 테이블(group table)
+     * Group Table은 flow table의 확장판이다. 하지만 비슷해 보이지만서도 다른부분이 많다. 결론적으로는 한번에 여러 action을 수행하기 위한 테이블이다.
+     * group identifier : Group entry를 구분할 수 있도록 해주는 32bit unsigned integer
+     * group type : group entry에 정의된 bucket들을 일부만 수행할 것인지(select) 전부 수행할 것인지(all)에 대한 규칙이 명시되어있다.
+     * counter : flow table의 counter와 마찬가지로 통계를 위해 사용된다.
+     * action buckets : action bucket은 말그대로 action'들'을 가지고 있고 그 action들을 가지고 있는 action bucket'들'을 하나의 group entry가 가지고 있다.
+  3. 네트워크 기능 가상화(network function virtualization)
+     * 하드웨어 기반의 네트워크 장비를 소프트웨어 기반의 가상화 기기로 전환하는 기술이다.
+  4. 파이프라인 처리(pipelining)
+     * 오픈플로우 스위치에서 매칭 포워딩 패킷 수정을 제공하는 연결된 테이블의 집합을 의미
 
 ---
 

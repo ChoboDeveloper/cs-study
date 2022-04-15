@@ -154,3 +154,26 @@
 
 
 ---
+
+### Port number
+
+* (1) TCPMUX : TCP Port service multiplexer
+* (7) ECHO 
+* (20) FTP - DATA : FTP 데이터전송
+* (21) FTP - CONTROL : FTP 전송 제어
+* (22) SSH
+* (23) TELNET
+* (25) SMTP 
+* (53) DNS
+* (69) TFTP 
+* (80) HTTP
+* (88) Kerberos
+* (110) POP3
+* (123) NTP : Network Time Protocol, 시간 동기화 프로토콜
+* (143) IMAP
+* (UDP, 161) SNMP
+* (179) BGP
+* (443) HTTPS
+
+---
+
