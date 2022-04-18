@@ -1,4 +1,4 @@
-# C++_STL
+# C++
 
 <Br>
 
@@ -217,3 +217,57 @@ cout << k;
 
 ---
 
+### 심볼 테이블
+
+* Symbol table은 다음과 같은 정보를 저장하기 위해 컴파일러에서 생성하는 자료구조
+
+  - Variable name
+  - Function name
+  - Objects, Classes, Interfaces
+
+* 이를 통해 name(label)을 체계적으로 관리한다. 또한, 선언 여부, type checking, scope checking(Global, Local) 등을 할 수 있다.
+
+* 예제
+
+  * 아래 예시 코드를 이용하여 컴파일러는 Fig1과 같은 계층구조의 symbol table을 생성한다. 어떤 함수에서 symbol table을 접근하면, 우선 현재 scope의 symbol table을 뒤지고, 없으면 parent로 올라간다. (until global symbol table)
+
+    ```
+    int value=10;
+    
+    void pro_one()
+       {
+       int one_1;
+       int one_2;
+       
+          {              \
+          int one_3;      |_  inner scope 1 
+          int one_4;      | 
+          }              /
+          
+       int one_5; 
+       
+          {              \   
+          int one_6;      |_  inner scope 2
+          int one_7;      |
+          }              /
+       }
+       
+    void pro_two()
+       {
+       int two_1;
+       int two_2;
+       
+          {              \
+          int two_3;      |_  inner scope 3
+          int two_4;      |
+          }              /
+          
+       int two_5;
+       }
+    ```
+
+    ![image](https://user-images.githubusercontent.com/75229881/163799314-3325b01a-1c32-4557-8d13-0a3b6005d5f7.png)
+
+    
+
+---

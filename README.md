@@ -70,7 +70,7 @@ Computer Science Knowledge Repository
 
 [Basic Knowledge](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/basic.md)
 
-[C++STL](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/c%2B%2Bstl.md)
+[C++](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/c%2B%2B.md)
 
 [Python](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/python.md)
 
