@@ -57,3 +57,21 @@ CNN(Convolutional Neural Network)은 기존 Fully Connected Neural Network와 �
     - Overfitting 감소
 
 ---
+
+### 분류성능 평가지표
+
+<img src = "https://user-images.githubusercontent.com/75229881/164005690-d082470f-4f58-47ea-af76-b9159cbc4fc4.png" width="40%">
+
+1. Precision
+   * **정밀도**란 모델이 Positive라고 분류한 것 중에서 실제 True인 것의 비율
+   * TP / (TP + FP)
+2. Recall
+   * **재현율**이란 실제 True인 것 중에서 모델이 Positive라고 예측한 것의 비율
+   * TP / (TP + FN)
+3. Sensitivity(=Recall)
+4. Specificity
+   * Specificity는 Sensitivity와 반대로 False set을 입력하였을때, False로 인식한 것의 비율이다.
+   * 분류기에 빗대어 말하면 0이라는 값을 넣었을 때 0이라는 결과를 얻은 비율이다.
+
+---
+

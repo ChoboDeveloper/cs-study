@@ -21,5 +21,26 @@
   ![img](https://gmlwjd9405.github.io/images/class-diagram/association.png)
 
   <img src = "https://user-images.githubusercontent.com/75229881/163381077-3128013d-2752-4e6b-8151-903377160834.png" width="60%">
+  
+* 연관(Association)
+
+  * **Association은 다른 객체의 참조를 가지는 필드**를 의미
+  * 즉 멤버변수로 선언하여 **지속적으로 관계**를 맺는 것을 의미한다.
+
+* 의존
+
+  * Dependency는 클래스간의 참조가 일어나는 것
+  * Dependency 참조는 메서드 내에서 대상 클래스의 객체를 생성하거나 사용, 리턴받아 사용하는 것
+  * 즉, **멤버변수로 사용하지 않고 메소드의 파라미터, 지역변수**로 활용하는 것이며 잠시 관계를 맺는 것이다.
+
+* 일반화(Generalization)
+
+  * 상속을 의미
+
+* 실체화(Realization)
+
+  * Realization은 interface에 있는 spec을 오버라이딩하여 실제로 구현하는 것
+
+* 집합
 
 ---

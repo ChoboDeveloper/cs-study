@@ -165,6 +165,11 @@
 
 ### 연관규칙
 
+* 연관규칙분석의 대표적인 알고리즘
+  * **Apriori algorithm** : [[Python\] Apriori algorithm:: 연관규칙분석 (1) (tistory.com)](https://ordo.tistory.com/89)
+  * **FP-growth algorithm**
+  * **DHP algorithm**
+
 **지지도**
 
 * 전체 거래 중 항목집합 X, Y를 모두 포함하는 거래비율
@@ -188,3 +193,20 @@
 
 ---
 
+### OLAP
+
+**Operation**
+
+1. **Roll-up**
+   * 작은단위에서 큰 단위
+   * (예 : month, year)로 집계 수행
+2. **Drill-down**
+   * 큰 단위에서 작은 단위
+   * (예: month, day)로 집계 수행
+3. **Slice and dice**
+   * Slice : 하나 혹은 그 이상의 축으로 셀들을 선택 - 단순필터
+   * Dice : 속성 값의 범위를 명시하여 셀들의 부분집합(부분큐브)을 선택 - 복합필터
+4. **Pivot**
+   * 데이터의 축을 변경하여 데이터를 표현
+
+---

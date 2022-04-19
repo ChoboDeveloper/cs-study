@@ -58,6 +58,21 @@
 * 내부 메트릭
   * 소프트웨어 산출물 자체를 측정
 
+<br>
+
+**재사용 메트릭**
+
+* WMC(Weighted Method per Class, 복잡도)
+  * 복잡도가 클수록 테스트 경로가 많아져 유지보수가 어렵다
+* DIT(Depth of Inheritance Tree, 상위클래스 수)
+* NOC(Number of Children, 하위클래스 수)
+  * 상속이 많을수록 변경의 영향이 많다.
+* CBO(Coupling Between Object Classes, 결합도)
+* LCOM(Lack of Cohension of Method, 응집도)
+* RFC(Response for a Class, 클래스 응답)
+  * 클래스 객체가 받은 메시지에 대한 응답으로 수행될 가능성이 있는 메서드의 수
+  * 응답이 클수록 테스트 디버깅이 어렵다.
+
 ---
 
 ### SW 테스트

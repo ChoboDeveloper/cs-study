@@ -21,6 +21,8 @@ Computer Science Knowledge Repository
 
 [SDLC/4.테스트](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_SDLC_4.test.md)  
 
+[SDLC/5.유지보수](https://github.com/ChoboDeveloper/cs-study/blob/main/1_Software-Engineering/sweng_SDLC_5.Maintenance.md)  
+
 <br><br>
 
 ## 데이터베이스 [Link](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/database.md)

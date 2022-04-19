@@ -59,6 +59,7 @@
     * 개발자를 위하여 작성 
 
 * **분석도구**
+  
   * Mini-spec, E-R Diagram, Data Dictionary, DFD 등
 
 **구조적 분석(DFD)**
@@ -148,5 +149,13 @@
   * @ key field
   * \* comment
   * ** no comment
+
+---
+
+### 요구사항 명세서
+
+* 요구사항 명세서 작성원칙
+
+![image](https://user-images.githubusercontent.com/75229881/163990871-83dba5c7-e75d-4389-a806-77b54ac955c1.png)
 
 ---

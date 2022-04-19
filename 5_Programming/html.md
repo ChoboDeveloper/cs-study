@@ -35,9 +35,15 @@
   * 다목적 마크업 언어
 * SOAP(Simple Object Access Protocol)
   * HTTP, SMTP등을 이용하여 XML을 교환하기 위한 프로토콜
+  * SOAP는 보통의 경우 원격 프로시저 호출(RPC)을 하는 메시지 패턴을 사용한다.
+  * 네트워크 노드(클라이언트)에서 다른 쪽 노드(서버)로 메시지를 요청하고, 서버는 메시지를 즉시 응답하게 된다.
 * WSDL(Web Service Description Lang)
   * 웹서비스 관련 서식, 프로토콜을 표준적으로 기술하기 위한 언어
   * XML로 작성되며, UDDI의 기초
+* UDDI(Universal Description, Discovery and Integration)
+  * 웹서비스에 대한 정보인 WSDL을 등록하고 검색하기 위한 저장소로 공개적으로 접근, 검색이 가능한 레지스터리이자 표준.
+  * UDDI는 WSDL로 기술된 웹 서비스 인터페이스의 디렉토리
+
 
 ---
 

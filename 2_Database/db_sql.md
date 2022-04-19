@@ -59,3 +59,43 @@ Group BY ID;
 
 ---
 
+### 관계대수
+
+* 순수 관계 연산자
+  * SELECT, PROJECT, DIVISION, JOIN
+* 일반 집합 연산자
+  * UNION, INTERSECT, MINUS
+
+* 완전집합
+  * 연산자 집합 ![image](https://user-images.githubusercontent.com/75229881/164007076-5d958e9a-561a-4f1d-a100-2514a4296c33.png)를 관계대수 연산자의 **완전 집합(complete set)**이라 부른다.
+  * 이 연산자 집합과 동등한 모든 질의 언어들은 **관계적으로 완전하다(relationally complete)**라고 정의한다.
+
+
+
+---
+
+### JOIN
+
+**비동등 조인**
+
+* 두 개의 테이블 간에 칼럼 값들이 서로 정확하게 일치하지 않는 경우에 사용된다. 
+* 비동등조인의 경우 '=' 연산자가 아닌 다른 (Between, >, >=, <, <= 등) 연산자들을 사용하여 JOIN을 수행하는 것이다.
+* 예제
+
+```sql
+SELECT E.ENAME, E.JOB, E.SAL, S.GRADE
+
+FROM EMP E, SALGRADE S
+
+WHERE E.SAL BETWEEN S.LOSAL AND S.HISAL;
+```
+
+![image](https://user-images.githubusercontent.com/75229881/164010895-ea8a865c-c14e-4028-9155-220a474024a3.png)
+
+![img](https://t1.daumcdn.net/cfile/tistory/2253A64B57B5920D28)
+
+* 비동등조인은 Cartesian Product 현상 발생여부를 충분히 고려한 뒤 사용해야 한다
+
+
+
+---
