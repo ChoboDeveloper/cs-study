@@ -68,6 +68,8 @@
 ### SSL/TLS Protocol stack
 
 > **단편화->압축->MAC->암호화->전송**
+>
+> 부인방지X
 
 ![image](https://user-images.githubusercontent.com/75229881/111439655-eee03c00-8748-11eb-8a7c-4e67b1ec22b2.png)
 

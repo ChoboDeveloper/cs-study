@@ -154,7 +154,21 @@ SNR 공식) SNR[db] = 10log(S/N)
 **Checksum**
 
 * **Checksum 바이트**는 단위 비트로 짤라서 **1. 각자 SUM** 하고 **2. Carry 부분 Wrap-around** **3. 1의 보수를 취함**
+
 * 송신측) 기존 데이터 + Checksum 바이트 송신
+
+  1. Pseudo Header, TCP Segment의 모든 값을 16비트 단위로 나눈다.
+
+     (예를 들어 12바이트(96비트)인 Pseudo Header의 경우 6개의 16비트 값으로 나눌 수 있다.)
+
+  2. TCP Header의 **Checksum 필드는 0x00으로 초기화** 하고 계산한다. (송신이든 수신이든)
+
+  3. 각각의 합마다 발생하는 **carry는 모두 wrap around** 하면서 전부 더해준다.
+
+     (아래에 8비트 합 연산시 wrap around를 하는 예제를 그려놨다. carry를 계속 더해주는 방식을 말한다.)
+
+  4. **계산 결과에 1의 보수를 취한다.** 
+
 * 수신측) 모두 더해서 1이면 오류없음, Carry 발생 시 Wrap-around(뒤로보냄)
 
 ---

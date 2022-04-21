@@ -96,6 +96,32 @@ WHERE E.SAL BETWEEN S.LOSAL AND S.HISAL;
 
 * 비동등조인은 Cartesian Product 현상 발생여부를 충분히 고려한 뒤 사용해야 한다
 
+<Br>
 
+**외부조인**
+
+![image](https://user-images.githubusercontent.com/75229881/164446402-ab175d53-c1cb-4e5d-9d68-9f8b5ca937f8.png)
+
+<br>
+
+**세미조인**
+
+![image](https://user-images.githubusercontent.com/75229881/164446471-9411b289-9349-41e6-a478-cb73b6716ef0.png)
+
+<br>
 
 ---
+
+### 질의 최적화
+
+**불필요한 Sort 방지**
+
+>  [구루비 DB 스터디 - 개발자, DBA가 함께 만들어가는 구루비 지식창고! (gurubee.net)](http://wiki.gurubee.net/pages/viewpage.action?pageId=26742238)
+
+* UNION ALL 보다는 UNION
+* Dinstinct 보다는 Exist Sub Query
+* Sort Unique 보다는 Sort Aggregate
+* 데이터 존재여부 확인 시 불필요한 Count 제거
+
+---
+
