@@ -75,12 +75,23 @@
   * 각 분기문 내부에서 If, Else를 한 번씩 다 만족해야 됌
 * **조건/결정(Condition/Decision) 커버리지**
   * 분기문 내/외부 모두 If, Else를 만족해야 됌
-
 * **변경/조건(MC/DC) 커버리지**
   * 다른 상태(condition)들의 변동이 없고 개별조건이 변경 되었을 때 결과 값에 영향을 미치는 경우 해당 상태는 MC/DC를 만족한다 할 수 있다.
 * **경로(Path) 커버리지**
   * 모든 Path를 한 번씩 실행할 수 있는 경우의 수
 
+<br>
+
+* 커버리지 예제
+
+```c++
+if(x>1 && y==0) z = z/x;
+if(z==2 || y>1) z = z+1;
+```
+
+![image](https://user-images.githubusercontent.com/75229881/164958064-334049c7-785d-4afb-b2ee-57540e66edbe.png)
+
+<br>
 
 **경험기반 테스트**
 

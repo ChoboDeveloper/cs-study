@@ -158,4 +158,7 @@
 
 ![image](https://user-images.githubusercontent.com/75229881/163990871-83dba5c7-e75d-4389-a806-77b54ac955c1.png)
 
+* 세부 요구사항
+  * 정보화 용역 제안요청서 참고
+
 ---
