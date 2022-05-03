@@ -95,6 +95,8 @@
 - 순차 카운터(Sequence Counter)
   - 디코더에 의해 선택된 번호에 해당하는 타이밍 신호(Clock)를 생성
 
+<br>
+
 **제어방식**
 
 * Hard-Wired
@@ -104,6 +106,15 @@
 * Micro Programming
   * 마이크로 프로그램이 저장된 별도의 제어 메모리를 필요로 한다.
   * 속도가 상대적으로 느리다.
+
+<br>
+
+**참고자료**
+
+* 메모리 용량
+  * 2<sup>MAR</sup> * MBR
+  * MAR = PC = Address Bus
+  * MBR = Data Bus = Word Size
 
 ---
 
