@@ -33,7 +33,9 @@ Computer Science Knowledge Repository
 
 [인덱스](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_index.md)  
 
-[빅데이터](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_bigdata.md)
+[빅데이터](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/bigdata.md)
+
+[보안](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_security.md)
 
 <br><br>
 

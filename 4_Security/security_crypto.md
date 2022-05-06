@@ -51,6 +51,7 @@
   * 오류전이 X
 * CTR 모드
   * 카운터를 암호화, 이를 평문블럭과 XOR
+  * 병렬처리 가능
   * **암호화 방법과 복호화 방법이 동일**
 
 ---
@@ -75,7 +76,7 @@
   * Add round key
   * Substitute bytes
   * Shift rows
-  * Mix columns
+  * Mix columns(마지막 라운드에는 없음)
   * Add round key
 
 * 국내 : ARIA

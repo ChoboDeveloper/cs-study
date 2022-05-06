@@ -64,14 +64,42 @@ CNN(Convolutional Neural Network)은 기존 Fully Connected Neural Network와 �
 
 1. Precision
    * **정밀도**란 모델이 Positive라고 분류한 것 중에서 실제 True인 것의 비율
+   
    * TP / (TP + FP)
+   
+     > 안타깝게도 recall도 완벽한 통계치는 아닙니다. 예를 들어, 위의 눈내림 예측기 예에서 이번에는 항상 `True` 로 예측한다고 가정해봅시다. 물론 accuracy는 낮겠지만, 모델이 모든 날을 눈이 내릴거라 예측하기 때문에 recall은 `1`이 되고 맙니다. 이 모델은 항상 `False` 로 예측하는 모델과 다를 바 없지만 높은 recall을 보유하게됩니다.
+     >
+     > 이러한 상황에서 도움을 줄 수 있는 통계치는 바로 *precision(정밀도)* 입니다. **Precision은 모델이 True로 예측한 데이터 중 실제로 True인 데이터이 수입니다**. 위의 예시에서 precision은 실제로 눈이 내린 날의 수를 모델이 눈이 내릴거라 예측한 날의 수로 나눈 값입니다.
+   
 2. Recall
    * **재현율**이란 실제 True인 것 중에서 모델이 Positive라고 예측한 것의 비율
+   
    * TP / (TP + FN)
+   
+     > accuracy는 데이터에 따라 매우 잘못된 통계를 나타낼 수도 있습니다. 예를 들어, 내일 눈이 내릴지 아닐지를 예측하는 모델이 있다고 가정해 봅시다. 꽤 괜찮은 성능을 내는 모델을 작성할 수 있는데요, 바로 항상 `False` 로 예측하는 것입니다. 이 모델은 놀랍게도 굉장히 높은 accuracy를 갖습니다. 왜냐하면 눈이 내리는 날은 그리 많지 않기 때문이죠. 하지만 높은 accuracy를 보유함에도 불구하고 이 모델은 전혀 쓸모가 없습니다.
+     >
+     > 이러한 상황에서 도움을 줄 수 있는 통계치는 바로 *recall(재현율)* 입니다. **Recall은 실제로 True인 데이터를 모델이 True라고 인식한 데이터의 수입니다**. 위의 예시에서 recall은 모델이 눈이 내릴거라 예측한 날의 수를 실제로 눈이 내린 날의 수로 나눈 값입니다.
+   
 3. Sensitivity(=Recall)
+
 4. Specificity
    * Specificity는 Sensitivity와 반대로 False set을 입력하였을때, False로 인식한 것의 비율이다.
    * 분류기에 빗대어 말하면 0이라는 값을 넣었을 때 0이라는 결과를 얻은 비율이다.
+
+**F1-Score**
+$$
+F1Score=2*\frac{precison*recall}{precision+recall}
+$$
+
+> 모델의 성능을 측정하는데 있어서 precision과 recall은 유용하게 사용됩니다. 그러나, 우리는 여전히 모델이 얼마나 효과적인지를 설명할 수 있는 한 가지 지표를 더 필요로합니다. 이 때 *F1 score* 가 사용됩니다.
+>
+> **F1 score는 precision 과 recall의 조화평균입니다**. 
+>
+> F1 score는 precision과 recall을 조합하여 하나의 통계치를 반환합니다. 여기서 일반적인 평균이 아닌 조화 평균을 계산하였는데, 그 이유는 precision과 recall이 `0` 에 가까울수록 F1 score도 동일하게 낮은 값을 갖도록 하기 위함입니다.
+>
+> 예를 들어, `recall = 1` 이고 `precision = 0.01` 로 측정된 모델이 있다고 생각해봅시다. 위 모델에는 분명 문제가 있다고 판단할 수 있는데요. precision이 매우 낮기 때문에 F1 score에도 영향을 미치게 됩니다. 만약 일반적인 평균을 구하면 다음과 같습니다.
+
+
 
 ---
 
