@@ -177,6 +177,23 @@
 
 ---
 
+**NoSQL 모델**
+
+* **Key-Value Database**
+  * 키와 값으로 이루어진, **저장과 조회**라는 가장 간단한 원칙에 충실한 데이터베이스
+* **Document Database**
+  *  Key-Value Database와의 중요한 차이는 **Document Database는 값을 문서로 저장한다**는 점이다. 여기서 **문서란** **semi-structured entity이며 보통 JSON이나 XML 같은 표준 형식**을 말한다
+  * MongoDB, CouchDB, Couchbase
+* **Column Family Database**
+  * Column과 Row와 같이 Relation Database와 동일한 용어를 사용하여 스키마를 정의한다.
+  * 컬럼 수가 많다면 관련된 컬럼들을 컬렉션으로 묶을 수 있다. 예를 들어 이름의 성과 이름을 하나로 묶고, 사무실, 핸드폰 등의 전화번호들을 하나로 묶을 수 있다. 이렇게 묶인 컬럼들을 **Column Family**라고 한다.
+  *  Hbase, Cassandra
+* **Graph Database**
+  * **그래프 데이터베이스**(GDB)는 데이터를 그래프(노드, 에지)로 저장하고 표현하는 데이터베이스이다. GDB는 에지를 통해 데이터에 해당하는 노드 간 관계를 직접 정할 수 있으며, 데이터의 관계를 그래프를 통해 직관적으로 시각화할 수 있다. 
+  * 2차원 테이블로 관리되는 관계형 데이터베이스(RDB)와의 가장 큰 차이점은 관계 설정에 있다. GDB는 데이터 간 관계를 명시적으로 저장하지만 RDB는 데이터 간 관계를 암묵적으로 연결하며 이러한 관계는 질의를 할 때마다 Join을 통해 구체화된다.
+
+---
+
 ### 빅데이터 분석
 
 * 빅데이터 분석 방법론의 계층

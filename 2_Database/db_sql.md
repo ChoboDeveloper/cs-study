@@ -110,6 +110,11 @@ WHERE E.SAL BETWEEN S.LOSAL AND S.HISAL;
 
 <br>
 
+**세타조인**
+
+* 조인에 참여하는 두 릴레이션의 속성 값을 비교하여 조건을 만족하는 투플만 반환한다.
+* 세타조인의 조건은{=,≠,≥,≤,>,<} 중 하나가 된다.
+
 ---
 
 ### 질의 최적화
@@ -122,6 +127,16 @@ WHERE E.SAL BETWEEN S.LOSAL AND S.HISAL;
 * Dinstinct 보다는 Exist Sub Query
 * Sort Unique 보다는 Sort Aggregate
 * 데이터 존재여부 확인 시 불필요한 Count 제거
+
+---
+
+### DISTINCT
+
+**NULL 포함 여부**
+
+* 포함되는 경우 : COUNT**(\*)**
+* 포함되지 않는 경우: COUNT**(ColumnName)**
+* COUNT( DISTINCT( ColumnName ) )으로 하면 중복되지 않고 NULL은 제외되는 값들만 COUNT
 
 ---
 
