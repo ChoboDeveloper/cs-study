@@ -454,12 +454,20 @@
 
 ---
 
-### MBR
+### Computer Booting
 
-> Master Boot Record
-
-* 부팅 시, OS가 메모리에 적재될 수 있도록 디스크의 시작 섹터에 위치하고 있다.
-* BIOS는 ROM에 적재되어 있고 각 장치의 부트로드 이전에 데이터흐름을 세팅한다.
+1. ROM - BIOS
+2. POST
+   * BIOS는 POST(Power on self test)를 진행하여 하드웨어의 정상적인 작동을 검사
+3. BootStrap
+   * POST에 이상이 없으면 **BIOS는 부트스트랩을 실행하여 부팅 정보를 메모리로 읽어 온다.**
+     - 부트스트랩 : Disk의 MBR에 저장된 부팅 정보를 RAM(메모리)으로 읽어온다.
+     - MBR(Master Boot Record): Disk의 첫 번째 섹터
+4. BootLoader
+   * 부트로더는 Disk에 있는 **운영체제(OS) 코드를 메모리로 읽어 온다.** 즉, **앞에서 읽어온 부팅 정보는 부트로더(Bootloader)**이다. 운영체제는 메모리에 상주하지 않지만 커널은 메모리에 상주한다.
+5. OS
+   * 읽어 온 운영체제 명령에 의해 CPU는 첫 프로세스(Demon)를 즉시 실행한다.
+   * 이후, 인터럽트가 발생하면 CPU는 각종 작업을 처리한다.
 
 ---
 

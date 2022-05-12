@@ -40,6 +40,13 @@ Group BY ID;
 
 ---
 
+### ORDER BY
+
+* ASC(기본값)
+* DESC
+
+---
+
 ### NULL
 
 * NULL에 대한 산술연산의 결과는 NULL이다
