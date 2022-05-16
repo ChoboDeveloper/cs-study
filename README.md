@@ -35,6 +35,8 @@ Computer Science Knowledge Repository
 
 [빅데이터](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/bigdata.md)
 
+[블록체인](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/blockchain.md)
+
 [보안](https://github.com/ChoboDeveloper/cs-study/blob/main/2_Database/db_security.md)
 
 <br><br>
