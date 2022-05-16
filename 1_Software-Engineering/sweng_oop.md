@@ -97,6 +97,19 @@
 
 #### 2. 구조패턴
 
+**2.1 데코레이터 패턴**
+
+* 기본 기능에 추가할 수 있는 기능의 종류가 많은 경우에 각 추가 기능을 Decorator 클래스로 정의 한 후 필요한 Decorator 객체를 조합함으로써 추가 기능의 조합을 설계 하는 방식
+* 예제
+
+<img src = "https://user-images.githubusercontent.com/75229881/168471009-aea3606c-dcfa-4b71-97a7-befb8b4162f6.png" width="70%">
+
+* 도로를 표시하는 기본 기능만 필요한 경우 RoadDisplay 객체를 이용한다.
+* 차선을 표시하는 추가 기능도 필요한 경우 RoadDisplay 객체와 LaneDecorator 객체를 이용한다.
+  * LaneDecorator에서는 차선 표시 기능만 직접 제공: drawLane()
+  * 도로 표시 가능은 RoadDisplay 클래스의 draw 메서드를 호출: super.draw()
+    * (DisplayDecorator 클래스에서 Display 클래스로의 합성(composition) 관계를 통해 RoadDisplay 객체에 대한 참조)
+
 #### 3. 행위패턴
 
 **3.1 스트레티지 패턴**

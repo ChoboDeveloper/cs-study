@@ -132,11 +132,106 @@
 
 ---
 
-### 
+### String
 
-  
+* 자바 문자열은 **불변(immutable)**
+* 문자열에 연산을 가하면 현재 문자열을 변경되지 않고 변경된 새 문자열이 만들어져서 반환
 
-  
+```java
+public class HelloWorld {
+    public static void main(String args[]){
+        String s0 = "Hello PL.";
+        String s1 = "Hello ";
+        String s2 = "PL.";
+        String s3 = new String("Hello ");
+        String s4 = s1 + s2; // 새로운 String Object 생성
+        String s5 = "Hello " + "PL.";
 
+        if(s1 == s3) System.out.println("s1 == s3");	// False, s3은 new string
+        if(s0 == s4) System.out.println("s0 == s4");	// False, s4는 new string
+        if(s0 == s5) System.out.println("s0 == s5");	// True
+        if(s1.equals(s3)) System.out.println("s1 == s3");	// True
+        if(s0.equals(s4)) System.out.println("s0 == s4");	// True
+    }
+}
 
+//result
+s0 == s5
+s1 == s3
+s0 == s4
+
+```
+
+---
+
+### 예외처리
+
+**try, throw, catch, finally**
+
+```java
+public class Mathematics {
+  public static void main(String[] args) {
+       int num1, num2;
+       int [] intArrayList = {0, 1, 2};
+       
+       num1 = 12;
+       num2 = 0;
+       
+       try {
+            //System.out.println(num1/num2);
+            System.out.println(intArrayList[3]);
+       } catch (ArithmeticException e) {
+            System.out.println("0으로는 값을 나눌 수가 없습니다.");
+       } catch (ArrayIndexOutOfBoundsException e) {
+       	    System.out.println("배열의 범위를 넘어섰습니다.");
+       } finally {
+       	    System.out.println("예외 관계없이 실행됨");
+       }
+  }
+}
+```
+
+ <br>
+
+**throws**
+
+* **자신을 호출하는 메소드에 예외처리의 책임을 넘긴다**
+
+```java
+	public static void main(String args[]){
+        try {
+            System.out.println("문장 A");
+            foo();
+            System.out.println("문장 B");
+        }
+        catch (Exception e){
+            System.out.println("문장 C");
+        }
+        System.out.println("문장 D");
+    }
+
+    public static void foo() throws Exception{
+        try{
+            System.out.println("문장 E");
+            throw new Exception();
+        }
+        catch (Exception e){
+            System.out.println("문장 F");
+            throw e;
+        }
+        finally {
+            System.out.println("문장 G");
+        }
+    }
+
+//result
+문장 A
+문장 E
+문장 F
+문장 G
+문장 C
+문장 D
+```
+
+---
 
