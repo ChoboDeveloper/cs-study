@@ -365,6 +365,11 @@
   * **Apriori algorithm** : [[Python\] Apriori algorithm:: 연관규칙분석 (1) (tistory.com)](https://ordo.tistory.com/89)
   * **FP-growth algorithm**
   * **DHP algorithm**
+* 항목집합
+  * k항목 빈발항목 집합의 가능한 **모든 항목집합은 2<sup>k</sup>-1**
+  * k항목 빈발항목집합 L은 **최대 2<sup>k</sup>-2**개(공집합과 전체집합 제외)의 연관규칙
+  * if, 5개면 31개의 항목집합, 30개 연관규칙
+
 
 **지지도**
 

@@ -38,6 +38,31 @@ FROM sql_test_b
 Group BY ID;
 ```
 
+* GROUP BY는 NULL까지 포함
+
+* **NVL(COLUMN, 표시할값)** 
+  * 조건에서 NULL을 뺄건지 말건지를 지정해주어야한다.
+  * 만약, NULL이 의미가 있다면 제외를 하면 안되겠지만, 'NULL이라고 보여주기 싫다면 ~~라고 처리해라' 라고 할 수 있는 함수가 NVL
+
+```sql
+-- NVL 함수는 값이 NULL인 경우 지정값을 출력하고, NULL이 아니면 원래 값을 그대로 출력한다.
+-- 함수  :  NVL("값", "지정값")
+
+-- 부서별 가장 높은 연봉과 가장 낮은 연봉
+-- 부서별 전체 연봉의 합, 전체 연봉의 평균을 구하시오.
+SELECT NVL(DEPARTMENT_ID, 0)
+        , MAX(SALARY)
+        , MIN(SALARY)
+        , SUM(SALARY)
+        , ROUND(AVG(SALARY))
+FROM    EMPLOYEES
+GROUP   BY DEPARTMENT_ID
+ORDER   BY DEPARTMENT_ID
+;
+```
+
+
+
 ---
 
 ### ORDER BY
@@ -109,6 +134,8 @@ WHERE E.SAL BETWEEN S.LOSAL AND S.HISAL;
 
 ![image](https://user-images.githubusercontent.com/75229881/164446402-ab175d53-c1cb-4e5d-9d68-9f8b5ca937f8.png)
 
+* **LEFT, RIGHT는 살리는 쪽임**
+
 <br>
 
 **세미조인**
@@ -121,6 +148,9 @@ WHERE E.SAL BETWEEN S.LOSAL AND S.HISAL;
 
 * 조인에 참여하는 두 릴레이션의 속성 값을 비교하여 조건을 만족하는 투플만 반환한다.
 * 세타조인의 조건은{=,≠,≥,≤,>,<} 중 하나가 된다.
+* 세타조인 중 특별히 비교연산자가 = 인 경우 **동등조인(equi join)**, 동등조인에서 **중복속성이 제거**된 것이 바로 **자연조인(natrual join)**
+  * 자연조인에서 **중복 속성이지 중복 튜블 아님!**
+
 
 ---
 
