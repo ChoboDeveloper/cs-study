@@ -49,6 +49,8 @@ Computer Science Knowledge Repository
 
 [자료구조](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_datastructure.md)  
 
+[클라우드](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/cloud.md)  
+
 [리눅스](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_linux.md)  
 
 [윈도우](https://github.com/ChoboDeveloper/cs-study/blob/main/3_OS/os_window.md) 
@@ -76,7 +78,7 @@ Computer Science Knowledge Repository
 
 [Basic Knowledge](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/basic.md)
 
-[C++](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/c%2B%2B.md)
+[C++](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/c%2B%2B.md) 
 
 [Python](https://github.com/ChoboDeveloper/cs-study/blob/main/5_Programming/python.md)
 

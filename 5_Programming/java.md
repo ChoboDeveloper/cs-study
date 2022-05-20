@@ -40,7 +40,11 @@
 
 ### Spring
 
-**계층**
+<br>
+
+**웹 계층**
+
+![image](https://user-images.githubusercontent.com/75229881/169479621-a26f2cac-f21c-41cb-aae1-f87237ae7779.png)
 
 * **Presentation Layer**
   * 브라우저상의 웹 클라이언트의 요청 및 응답을 처리
@@ -70,6 +74,17 @@
     - 실제 DB 테이블과 매칭될 클래스
     - Entity 클래스 또는 가장 Core한 클래스라고 부름
     - Domain 로직만을 가지고 있어야하며 Presentation Logic을 가지고 있어서는 안된다.
+
+<br>
+
+![image](https://user-images.githubusercontent.com/75229881/169478517-3fd136d3-ca6b-487a-9381-6fa131d0913c.png)
+
+* 요청
+  * **Request -> DispatcherServlet -> HandlerMapping -> Controller -> Service -> DAO -> DB** 
+* 응답
+  * **-> DAO -> Service -> Controller -> DispatcherServlet -> ViewResolver -> View -> Response**
+
+
 
 ---
 
